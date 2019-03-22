@@ -18,10 +18,11 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class sign_Up extends AppCompatActivity
 {
-
+    //widgets
     private EditText  newUserName,newpassword,newEmail;
     private Button    register;
     private TextView  oldUser;
+    //Firebase authentication and other variables
     private FirebaseAuth firebaseAuth;
     private String name="\0",password="\0",userEmail="\0";
 
@@ -30,6 +31,8 @@ public class sign_Up extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign__up);
+
+
         firebaseAuth = FirebaseAuth.getInstance();//getting an instance from firebase
         UIvariables();//calling function to reference the variables
 
@@ -38,7 +41,6 @@ public class sign_Up extends AppCompatActivity
         {
             @Override
             public void onClick(View v) {
-                Toast.makeText(sign_Up.this, "works", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(sign_Up.this,MainActivity.class));
                 finish();
             }
@@ -79,15 +81,11 @@ public class sign_Up extends AppCompatActivity
     }
     private void UIvariables()//            to reference xml id's to java variables
     {
-
-
-        //signUp=(TextView)findViewById(R.id.signUp);
-        newUserName=(EditText)findViewById(R.id.newUserName);
-        newpassword=(EditText)findViewById(R.id.newpassword);
-        newEmail=(EditText)findViewById(R.id.newEmail);
-        register=(Button) findViewById(R.id.register);
-        oldUser=(TextView)findViewById(R.id.oldUser);
-
+        newUserName=findViewById(R.id.newUserName);
+        newpassword=findViewById(R.id.newpassword);
+        newEmail=findViewById(R.id.newEmail);
+        register=findViewById(R.id.register);
+        oldUser=findViewById(R.id.oldUser);
     }
     private void enterData()
     {

@@ -2,9 +2,10 @@ package com.example.user_registeration;
 
 public class Data_From_Database {
 
-    float parking,cordialty,quality,appeal,taste,ambience,comfort,hygiene;
+    float parking,cordialty,quality,appeal,taste,ambience,comfort,hygiene,count;
 
-    public Data_From_Database() {
+    public Data_From_Database( ) {
+
     }
 
     public float getParking() {
@@ -69,5 +70,13 @@ public class Data_From_Database {
 
     public void setHygiene(float hygiene) {
         this.hygiene = hygiene;
+    }
+
+    public float getCount() {
+        return count;
+    }
+
+    public void setCount(float count) {
+        this.count = count;
     }
 }

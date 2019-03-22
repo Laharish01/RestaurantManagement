@@ -128,5 +128,44 @@
     <string name="checkBoxText">Do you want to confirm</string>
     <string name="SpeedText">Speed</string>
     <string name="PackageText">Packing</string>
+    <string name="DineFB">Diner\'s Average Feedbacks</string>
+    <string name="HomeDeliveryFB">Home Delivery Average Feedback</string>
+    <string name="_2Seater">2</string>
+    <string name="_4Seater">4</string>
+    <string name="_8Seater">8</string>
+    <string name="Table_name1">T1</string>
+    <string name="Booked_Time">Booked Timings</string>
+    <string name="closeButton">CLOSE</string>
+
+    <string-array name="Two_Table_names_strings">
+        <item>T1</item>
+        <item>T2</item>
+        <item>T3</item>
+        <item>T4</item>
+        <item>T5</item>
+        <item>T6</item>
+
+    </string-array>
+    <string-array name="Four_Table_names_strings">
+        <item>F1</item>
+        <item>F2</item>
+        <item>F3</item>
+        <item>F4</item>
+    </string-array>
+    <string-array name="Eight_Table_names_strings">
+        <item>E1</item>
+        <item>E2</item>
+    </string-array>
+
+    <string name="SetTime">SET TIMINGS</string>
+    <string name="StartingTimeText">StartingTime</string>
+    <string name="EndingTimeText">Ending time</string>
+    <string name="Availabilty">Check Availability</string>
+    <string name="Show_Prev_Timings">Show Booked Slots</string>
+    <string name="TwoWheeler">2</string>
+    <string name="FourWheeler">4</string>
+    <string name="RefTim">Timings</string>
+    <string name="Confirm">Confirm</string>
+
 
 </resources>

@@ -1,3 +1,4 @@
+//reset password not working
 package com.example.user_registeration;
 
 import android.content.Intent;
@@ -18,26 +19,32 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity
 {
+    //widgets
     TextView signUp,resetPassword;
     EditText loginEmail,loginPassword;
     Button loginButton;
+    //firebase authentication and variables
     FirebaseAuth firebaseAuth;
     String userEmail,password;
-
     boolean correct_credentials;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         firebaseAuth=FirebaseAuth.getInstance();
-        Homepage_Variables();
         FirebaseUser user=firebaseAuth.getCurrentUser();
+
         if(user!=null)
         {
             finish();
             startActivity(new Intent(MainActivity.this,Choice.class));
         }
+
+        Homepage_Variables();
+
         //on clicking login button
         loginButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -53,32 +60,30 @@ public class MainActivity extends AppCompatActivity
                 }
             });
         //if you forget your password
-        resetPassword.setOnClickListener(new View.OnClickListener() {
+        /*resetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,ResetPassword.class));
             }
-        });
+        });*/
         //redirecting to user sign up page
         signUp.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                Toast.makeText(MainActivity.this,"Main triggered",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent( MainActivity.this,sign_Up.class));
-
             }
         });
     }
 
     private void Homepage_Variables()
     {
-        signUp=(TextView)findViewById(R.id.signUp);
-        loginEmail=(EditText)findViewById(R.id.loginEmail);
-        loginPassword=(EditText)findViewById(R.id.loginPassword);
-        loginButton=(Button)findViewById((R.id.loginButton));
-        resetPassword=(TextView)findViewById(R.id.resetPassword);
+        signUp=findViewById(R.id.signUp);
+        loginEmail=findViewById(R.id.loginEmail);
+        loginPassword=findViewById(R.id.loginPassword);
+        loginButton=findViewById((R.id.loginButton));
+        resetPassword=findViewById(R.id.resetPassword);
     }
 
     private boolean Validate_Login_Credentials()

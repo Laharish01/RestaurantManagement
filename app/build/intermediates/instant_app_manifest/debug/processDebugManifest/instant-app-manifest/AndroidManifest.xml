@@ -25,6 +25,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.user_registeration.ManagerRefresh" />
+        <activity android:name="com.example.user_registeration.SetParkingTime" />
+        <activity android:name="com.example.user_registeration.Parking" />
+        <activity android:name="com.example.user_registeration.Set_Time" />
+        <activity android:name="com.example.user_registeration.Show_Timings_Dialog" />
+        <activity android:name="com.example.user_registeration.TwoSeaterTimings" />
+        <activity android:name="com.example.user_registeration.TableType" />
+        <activity android:name="com.example.user_registeration.HomeDeliveryFBMN" />
+        <activity android:name="com.example.user_registeration.DineFBMN" />
+        <activity android:name="com.example.user_registeration.Manager_Feedback" />
         <activity android:name="com.example.user_registeration.ResetPassword" />
         <activity android:name="com.example.user_registeration.Feedback_home_delivery" />
         <activity android:name="com.example.user_registeration.Choice" />

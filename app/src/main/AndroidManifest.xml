@@ -11,6 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ManagerRefresh"></activity>
+        <activity android:name=".SetParkingTime" />
+        <activity android:name=".Parking" />
+        <activity android:name=".Set_Time" />
+        <activity android:name=".Show_Timings_Dialog" />
+        <activity android:name=".TwoSeaterTimings" />
+        <activity android:name=".TableType" />
+        <activity android:name=".HomeDeliveryFBMN" />
+        <activity android:name=".DineFBMN" />
+        <activity android:name=".Manager_Feedback" />
         <activity android:name=".ResetPassword" />
         <activity android:name=".Feedback_home_delivery" />
         <activity android:name=".Choice" />
