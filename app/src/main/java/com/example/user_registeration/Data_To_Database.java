@@ -50,3 +50,11 @@ class Data_To_Database_Timings
         P3 = p3;
     }
 }
+class Data_To_Database_Parking
+{
+    String parkTime;
+
+    public Data_To_Database_Parking(String parkTime) {
+        this.parkTime = parkTime;
+    }
+}

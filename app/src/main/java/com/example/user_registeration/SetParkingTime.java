@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -23,6 +24,7 @@ import java.util.Calendar;
 import java.util.Objects;
 
 public class SetParkingTime extends AppCompatActivity {
+    private static final String TAG = "SetParkingTime";
     TimePickerDialog timePickerDialog;
     FirebaseDatabase databasePark= FirebaseDatabase.getInstance();
     DatabaseReference databaseRefPark;
@@ -30,7 +32,7 @@ public class SetParkingTime extends AppCompatActivity {
     int hour, minute,position;
     boolean anstemp;
     String ST = "\0", ET = "\0";
-    String temp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,16 +95,18 @@ public class SetParkingTime extends AppCompatActivity {
             }
         });
 
-        Confirm.setOnClickListener(new View.OnClickListener() {
+          Confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (anstemp) {
 
-                    databaseRefPark.child("P" + position).addValueEventListener(new ValueEventListener() {
+                    databaseRefPark.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot)
                         {
-                            temp = Objects.requireNonNull(dataSnapshot.getValue()).toString();
+                            //temp = Objects.requireNonNull(dataSnapshot.getValue()).toString();
+                            String temp =String.valueOf(dataSnapshot.child("P" + position).getValue());
+                            AddTiming(temp);
 
                         }
 
@@ -112,7 +116,7 @@ public class SetParkingTime extends AppCompatActivity {
 
                         }
                     });
-                    databaseRefPark.child("P" + position).setValue(temp+ST.replace(":","") + "-" + ET.replace(":","")+",");//
+
                 }
                 anstemp=false;
 
@@ -120,10 +124,19 @@ public class SetParkingTime extends AppCompatActivity {
             }
         });
 
-        databaseRefPark.child("P" + position).setValue(temp+ST.replace(":","") + "-" + ET.replace(":","")+",");//
+        //Toast.makeText(getApplicationContext(),""+temp,Toast.LENGTH_SHORT).show();
+
+        //databaseRefPark.child("P" + position).setValue(temp+ST.replace(":","") + "-" + ET.replace(":","")+",");//
 
     }
+    public void AddTiming(String temp)
+    {
+        String addtime=temp+ST.replace(":","") + "-" + ET.replace(":","")+",";
+        Data_To_Database_Parking obj=new Data_To_Database_Parking(addtime);
 
+        databaseRefPark.child("P" + position).setValue(obj);//
+
+    }
     public void Enter_Time() {
 
         Confirm.setEnabled(false);
@@ -216,6 +229,7 @@ public class SetParkingTime extends AppCompatActivity {
         String[] split_timings = timingsReceived.split(",");//1900-2000    2030-2100   2200-2300
         int[] st = new int[split_timings.length];
         int[] et = new int[split_timings.length];
+        Log.d(TAG, "SplitAndCheck: "+split_timings.length);
 
 
 
