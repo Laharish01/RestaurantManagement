@@ -27,6 +27,7 @@
         <activity android:name="com.example.user_registeration.ManagerRefresh" />
         <activity android:name="com.example.user_registeration.SetParkingTime" />
         <activity android:name="com.example.user_registeration.Parking" />
+        <activity android:name="com.example.user_registeration.Data_To_Database_Parking" />
         <activity android:name="com.example.user_registeration.Set_Time" />
         <activity android:name="com.example.user_registeration.Show_Timings_Dialog" />
         <activity android:name="com.example.user_registeration.TwoSeaterTimings" />

@@ -31,6 +31,7 @@ public class SetParkingTime extends AppCompatActivity {
     Button STbutton, ETbutton, Availabilitybutton,Confirm;
     int hour, minute,position;
     boolean anstemp;
+    String key;
     String ST = "\0", ET = "\0";
 
 
@@ -99,14 +100,22 @@ public class SetParkingTime extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (anstemp) {
+                    
 
-                    databaseRefPark.addValueEventListener(new ValueEventListener() {
+                    databaseRefPark.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot)
                         {
                             //temp = Objects.requireNonNull(dataSnapshot.getValue()).toString();
                             String temp =String.valueOf(dataSnapshot.child("P" + position).getValue());
-                            AddTiming(temp);
+                            String addtime=temp+ST.replace(":","") + "-" + ET.replace(":","")+",";
+                            databaseRefPark.child("P"+position).setValue(addtime);
+
+
+                            //key=dataSnapshot.child("P" + position).getKey();
+                            //new Data_To_Database_Parking(key,true);
+
+                            //AddTiming(temp);
 
                         }
 
@@ -133,9 +142,7 @@ public class SetParkingTime extends AppCompatActivity {
     {
         String addtime=temp+ST.replace(":","") + "-" + ET.replace(":","")+",";
         Data_To_Database_Parking obj=new Data_To_Database_Parking(addtime);
-
-        databaseRefPark.child("P" + position).setValue(obj);//
-
+        databaseRefPark.setValue(obj);//
     }
     public void Enter_Time() {
 
