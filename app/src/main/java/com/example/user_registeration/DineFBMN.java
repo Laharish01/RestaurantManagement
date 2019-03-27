@@ -19,13 +19,17 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class DineFBMN extends AppCompatActivity {
+
 
     FirebaseDatabase database;
     DatabaseReference databaseRef;
     ListView LvMN_DFB;
-    ArrayList<String> Dine_FB;
+
+    ArrayList<String> Dine_FB;//list for average feedback
+
     ArrayAdapter<String> arrayAdapter;
 
     //Data_From_Database ratings;
@@ -36,30 +40,29 @@ public class DineFBMN extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dine_fbmn);
 
-
-        Dine_FB=new ArrayList<>();
-        arrayAdapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,Dine_FB);
-
         database = FirebaseDatabase.getInstance();
-        databaseRef = database.getReference().child("Ratings");
+        databaseRef = database.getReference().child("Ratings");//refers to Ratings child
         LvMN_DFB=findViewById(R.id.ListViewMN_DineFB);
 
+        Dine_FB=new ArrayList<>();
+        arrayAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,Dine_FB);
 
 
-                databaseRef.addValueEventListener(new ValueEventListener() {
+               databaseRef.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot)
                     {
+                        //getting ratings from firebase database
 
-                        count= Float.parseFloat(dataSnapshot.child("count").getValue().toString());
-                        ambience= Float.parseFloat(dataSnapshot.child("ambience").getValue().toString());
-                        appeal= Float.parseFloat(dataSnapshot.child("appeal").getValue().toString());
-                        comfort= Float.parseFloat(dataSnapshot.child("comfort").getValue().toString());
-                        cordialty= Float.parseFloat(dataSnapshot.child("cordialty").getValue().toString());
-                        hygiene= Float.parseFloat(dataSnapshot.child("hygiene").getValue().toString());
-                        parking= Float.parseFloat(dataSnapshot.child("parking").getValue().toString());
-                        quality= Float.parseFloat(dataSnapshot.child("quality").getValue().toString());
-                        taste= Float.parseFloat(dataSnapshot.child("taste").getValue().toString());
+                        count= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("count").getValue()).toString());
+                        ambience= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("ambience").getValue()).toString());
+                        appeal= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("appeal").getValue()).toString());
+                        comfort= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("comfort").getValue()).toString());
+                        cordialty= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("cordialty").getValue()).toString());
+                        hygiene= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("hygiene").getValue()).toString());
+                        parking= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("parking").getValue()).toString());
+                        quality= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("quality").getValue()).toString());
+                        taste= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("taste").getValue()).toString());
 
                         Dine_FB.add("Count:"+count);
                         Dine_FB.add("Ambience:"+ambience);

@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ManagerRefresh"></activity>
+        <activity
+            android:name=".NaviDraw"
+            android:label="@string/title_activity_navi_draw"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Choice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ManagerRefresh" />
         <activity android:name=".SetParkingTime" />
         <activity android:name=".Parking" />
         <activity android:name=".Set_Time" />
@@ -23,7 +30,6 @@
         <activity android:name=".Manager_Feedback" />
         <activity android:name=".ResetPassword" />
         <activity android:name=".Feedback_home_delivery" />
-        <activity android:name=".Choice" />
         <activity android:name=".Feedback" />
         <activity android:name=".sign_Up" />
         <activity android:name=".MainActivity">

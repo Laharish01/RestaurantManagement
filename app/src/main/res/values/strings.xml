@@ -167,5 +167,24 @@
     <string name="RefTim">Timings</string>
     <string name="Confirm">Confirm</string>
 
+    <string name="Table">Table</string>
+    <string name="Refresh">Refresh</string>
+
+    <string-array name="Items">
+        <item>Parking</item>
+        <item>Table</item>
+        <item>Feedback</item>
+        <item>Refresh</item>
+        <item>Diner Feeedback</item>
+        <item>HD Feedback</item>
+
+    </string-array>
+    <string name="title_activity_navi_draw">NaviDraw</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
 
 </resources>

@@ -27,6 +27,7 @@ animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
 array Eight_Table_names_strings
 array Four_Table_names_strings
+array Items
 array Two_Table_names_strings
 attr actionBarDivider
 attr actionBarItemBackground
@@ -789,6 +790,8 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
 dimen app_bar_height
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -909,6 +912,8 @@ dimen mtrl_textinput_box_stroke_width_default
 dimen mtrl_textinput_box_stroke_width_focused
 dimen mtrl_textinput_outline_box_expanded_padding
 dimen mtrl_toolbar_default_height
+dimen nav_header_height
+dimen nav_header_vertical_spacing
 dimen notification_action_icon_size
 dimen notification_action_text_size
 dimen notification_big_circle_margin
@@ -1047,8 +1052,15 @@ drawable design_snackbar_background
 drawable diner
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_apps_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_menu_camera
+drawable ic_menu_gallery
+drawable ic_menu_manage
+drawable ic_menu_send
+drawable ic_menu_share
+drawable ic_menu_slideshow
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
@@ -1067,6 +1079,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable side_nav_bar
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable twotable
@@ -1082,7 +1095,7 @@ id ComfortText
 id ConfirmParking
 id ETbutton
 id FUNCTION
-id Feedback
+id FeedbackManager
 id FeedbackMn
 id FoodText
 id FourWheeler
@@ -1096,6 +1109,7 @@ id PackagingText
 id ParkingText
 id PresentationText
 id QualityText
+id RefreshManager
 id Refresh_Ratings
 id Refresh_Timing
 id SHIFT
@@ -1127,6 +1141,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1176,6 +1191,7 @@ id direct
 id disableHome
 id displayET
 id displayST
+id drawer_layout
 id editText
 id edit_query
 id end
@@ -1185,12 +1201,16 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab
+id feedbackDine
+id feedbackHd
 id fill
 id fill_horizontal
 id fill_vertical
 id filled
 id fixed
 id forever
+id fragment_container
 id ghost_view
 id gone
 id group_divider
@@ -1203,7 +1223,7 @@ id icon_group
 id icon_only
 id ifRoom
 id image
-id imageView2
+id imageView
 id imageViewTable
 id info
 id invisible
@@ -1218,6 +1238,7 @@ id line3
 id linearLayout
 id listMode
 id list_item
+id list_view
 id loginButton
 id loginEmail
 id loginEmailText
@@ -1233,6 +1254,13 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id nav_Dine_Feedback
+id nav_Feedback
+id nav_HD_Feedback
+id nav_Parking
+id nav_Refresh
+id nav_TableSelect
+id nav_view
 id navigation_header_container
 id never
 id newEmail
@@ -1251,6 +1279,7 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
+id parking_select
 id passwordText
 id percent
 id pin
@@ -1321,6 +1350,7 @@ id stretch
 id submenuarrow
 id submit_area
 id tabMode
+id table_book
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
@@ -1331,7 +1361,6 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
-id textView3
 id textView4
 id textViewStartingTime
 id textViewTableName
@@ -1343,6 +1372,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1418,6 +1448,7 @@ layout activity_home_delivery_fbmn
 layout activity_main
 layout activity_manager__feedback
 layout activity_manager_refresh
+layout activity_navi_draw
 layout activity_parking
 layout activity_reset_password
 layout activity_set__time
@@ -1426,6 +1457,8 @@ layout activity_show__timings__dialog
 layout activity_sign__up
 layout activity_table_type
 layout activity_two_seater_timings
+layout app_bar_navi_draw
+layout content_navi_draw
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1442,6 +1475,8 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
+layout nav_header
+layout nav_header_navi_draw
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1462,7 +1497,10 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout twotable
+menu activity_navi_draw_drawer
+menu draw_navi
 menu menu
+menu navi_draw
 mipmap ic_launcher
 mipmap ic_launcher_round
 string AmbienceText
@@ -1485,6 +1523,7 @@ string ParkingText
 string PresentationText
 string QualityText
 string RefTim
+string Refresh
 string RegisterTitle
 string ResetPassword
 string ServiceText
@@ -1494,6 +1533,7 @@ string Show_Prev_Timings
 string SpeedText
 string StartingTimeText
 string Submit
+string Table
 string Table_name1
 string TasteText
 string TwoWheeler
@@ -1587,6 +1627,11 @@ string mtrl_chip_close_icon_content_description
 string nPassword
 string nRegister
 string nUserName
+string nav_header_desc
+string nav_header_subtitle
+string nav_header_title
+string navigation_drawer_close
+string navigation_drawer_open
 string newemail
 string password_toggle_content_description
 string path_password_eye
@@ -1598,6 +1643,7 @@ string rpIns
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_feedbackfinal
+string title_activity_navi_draw
 string title_activity_scrolling
 string userLogin
 string userRegister

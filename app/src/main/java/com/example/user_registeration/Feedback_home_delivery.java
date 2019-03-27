@@ -25,6 +25,8 @@ public class Feedback_home_delivery extends AppCompatActivity {
     float vquickness, vcordialtyHD, vqualityHD, vpacking, vtasteHD;
     float oldquickness, oldcordialtyHD, oldqualityHD, oldpacking, oldtasteHD;
     float countHD;
+    float[] vFeedback,oldFeedback;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,9 @@ public class Feedback_home_delivery extends AppCompatActivity {
         Feedback_HD_Variables();
         database = FirebaseDatabase.getInstance();
         databaseRefHD = database.getReference().child("Ratings_HD");
+
+        vFeedback=new float[5];
+        oldFeedback=new float[5];
         //When Rating is set by the user
         quickness.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
@@ -101,7 +106,7 @@ public class Feedback_home_delivery extends AppCompatActivity {
                         Send_Feedback();
                         Toast.makeText(Feedback_home_delivery.this,"Upload Complete",Toast.LENGTH_SHORT).show();
                         finish();
-                        startActivity(new Intent(Feedback_home_delivery.this,Choice.class));
+                        startActivity(new Intent(Feedback_home_delivery.this,NaviDraw.class));
 
                     }});
 
@@ -117,6 +122,7 @@ public class Feedback_home_delivery extends AppCompatActivity {
         tasteHD = (RatingBar) findViewById(R.id.ratingBarTaste);
         submitFeedback = (Button) findViewById(R.id.buttonSubmit);
         check = (CheckBox) findViewById(R.id.check);
+
 
     }
     private void Calculate_Average()

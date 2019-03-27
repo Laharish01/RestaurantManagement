@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <ListView
-            android:id="@+id/ListViewMN_HDFB"
+            android:id="@+id/ListViewMN_DineFB"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>

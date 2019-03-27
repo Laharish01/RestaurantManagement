@@ -13,6 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class HomeDeliveryFBMN extends AppCompatActivity {
 
@@ -34,7 +35,7 @@ public class HomeDeliveryFBMN extends AppCompatActivity {
 
         database=FirebaseDatabase.getInstance();
         databaseRef=database.getReference().child("Ratings_HD");
-        ListViewMN_HDFB=findViewById(R.id.ListViewMN_DineFB);
+        ListViewMN_HDFB=findViewById(R.id.ListViewMN_HDFB);
         
         List=new ArrayList<>();
         arrayAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,List);
@@ -44,12 +45,12 @@ public class HomeDeliveryFBMN extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                countHD= Float.parseFloat(dataSnapshot.child("countHD").getValue().toString());
-                quickness= Float.parseFloat(dataSnapshot.child("quickness").getValue().toString());
-                packing= Float.parseFloat(dataSnapshot.child("packing").getValue().toString());
-                cordialtyHD= Float.parseFloat(dataSnapshot.child("cordialtyHD").getValue().toString());
-                qualityHD= Float.parseFloat(dataSnapshot.child("qualityHD").getValue().toString());
-                tasteHD= Float.parseFloat(dataSnapshot.child("tasteHD").getValue().toString());
+                countHD= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("countHD").getValue()).toString());
+                quickness= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("quickness").getValue()).toString());
+                packing= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("packing").getValue()).toString());
+                cordialtyHD= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("cordialtyHD").getValue()).toString());
+                qualityHD= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("qualityHD").getValue()).toString());
+                tasteHD= Float.parseFloat(Objects.requireNonNull(dataSnapshot.child("tasteHD").getValue()).toString());
 
                 List.add("Count:"+countHD);
                 List.add("Quickness:"+quickness);

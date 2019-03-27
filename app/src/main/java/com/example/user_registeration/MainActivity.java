@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity
         if(user!=null)
         {
             finish();
-            startActivity(new Intent(MainActivity.this,Choice.class));
+            startActivity(new Intent(MainActivity.this,NaviDraw.class));
         }
 
         Homepage_Variables();
@@ -60,12 +60,12 @@ public class MainActivity extends AppCompatActivity
                 }
             });
         //if you forget your password
-        /*resetPassword.setOnClickListener(new View.OnClickListener() {
+        resetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,ResetPassword.class));
             }
-        });*/
+        });
         //redirecting to user sign up page
         signUp.setOnClickListener(new View.OnClickListener()
         {

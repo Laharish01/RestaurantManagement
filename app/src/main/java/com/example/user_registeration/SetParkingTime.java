@@ -138,12 +138,7 @@ public class SetParkingTime extends AppCompatActivity {
         //databaseRefPark.child("P" + position).setValue(temp+ST.replace(":","") + "-" + ET.replace(":","")+",");//
 
     }
-    public void AddTiming(String temp)
-    {
-        String addtime=temp+ST.replace(":","") + "-" + ET.replace(":","")+",";
-        Data_To_Database_Parking obj=new Data_To_Database_Parking(addtime);
-        databaseRefPark.setValue(obj);//
-    }
+
     public void Enter_Time() {
 
         Confirm.setEnabled(false);
