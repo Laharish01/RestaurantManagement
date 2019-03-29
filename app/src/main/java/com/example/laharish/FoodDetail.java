@@ -62,7 +62,7 @@ public class FoodDetail extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new Database(FoodDetail.this).addToCart(new Order (
+                new Database(getApplicationContext()).addToCart(new Order (
                             food_id,
                             foods.getName(),
                             enb.getNumber(),
@@ -71,7 +71,6 @@ public class FoodDetail extends AppCompatActivity {
                 Toast.makeText(FoodDetail.this, "Added to cart", Toast.LENGTH_SHORT).show();
             }
         });
-
         collapsingToolbarLayout = findViewById(R.id.collapsing);
         collapsingToolbarLayout.setCollapsedTitleTextAppearance(R.style.CollapseAppbar);
         collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.ExpandedAppbar);
@@ -94,21 +93,21 @@ public class FoodDetail extends AppCompatActivity {
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                String foodid="";
+                 food_id="";
               //  Log.d(TAG, "onDataChange: " + dataSnapshot.getKey()+foods.getPrice());
                 for(DataSnapshot child :dataSnapshot.getChildren()) {
-                    foodid = child.getKey();
-                    if(dataSnapshot.child(foodid).child("Name").getValue().equals(food_name))
+                    food_id = child.getKey();
+                    if(dataSnapshot.child(food_id).child("Name").getValue().equals(food_name))
                     {
 
-                        Log.d(TAG, "onDataChange: "+dataSnapshot.child(foodid).getValue());
+                        Log.d(TAG, "onDataChange: "+dataSnapshot.child(food_id).getValue());
 
                         break;
                     }
-                    Log.d(TAG, "onDataChange: " + child.getKey()+","+dataSnapshot.child(foodid).child("Name").getValue().equals(food_name));
+                    Log.d(TAG, "onDataChange: " + child.getKey()+","+dataSnapshot.child(food_id).child("Name").getValue().equals(food_name));
                 }
                     //  Toast.makeText(FoodDetail.this, ""+child.getKey(), Toast.LENGTH_SHORT).show();
-               foods = dataSnapshot.child(foodid).getValue(Food.class);
+               foods = dataSnapshot.child(food_id).getValue(Food.class);
 
                 Picasso.with(FoodDetail.this).load(foods.getImage())
                         .fit()

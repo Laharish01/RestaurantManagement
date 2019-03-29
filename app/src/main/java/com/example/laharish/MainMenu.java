@@ -90,8 +90,7 @@ public class MainMenu extends AppCompatActivity {
         fab.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Going to cart", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(MainMenu.this, Cart.class));
             }
         });
 
