@@ -29,7 +29,7 @@ import static android.view.View.OnClickListener;
 
 public class MainMenu extends AppCompatActivity {
 
-    //Getting reference from database
+    //Getting reference from databases
     FirebaseDatabase fireData;
     DatabaseReference ref;
 

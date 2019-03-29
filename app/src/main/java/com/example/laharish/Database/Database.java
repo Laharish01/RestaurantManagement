@@ -49,7 +49,7 @@ public class Database extends SQLiteAssetHelper {
 
     public void addToCart(Order order)
     {
-        SQLiteDatabase db;
+        SQLiteDatabase db= getReadableDatabase();
         SQLiteOpenHelper ohg;
 
         String query = String.format("INSERT INTO RMA (ProductName,ProductId,Quantity,Price) VALUES('%s', '%s','%s','%s' )",
