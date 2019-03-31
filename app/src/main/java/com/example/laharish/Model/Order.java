@@ -1,7 +1,7 @@
 package com.example.laharish.Model;
 
 public class Order {
-    private  String ProductId;
+    private String ProductId;
     private String ProductName;
     private String Quantity;
     private String Price;

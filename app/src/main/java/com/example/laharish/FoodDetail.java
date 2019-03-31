@@ -62,15 +62,18 @@ public class FoodDetail extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new Database(getApplicationContext()).addToCart(new Order (
-                            food_id,
-                            foods.getName(),
-                            enb.getNumber(),
-                            foods.getPrice()
+                new Database(getBaseContext()).addToCart(new Order(
+                        food_id,
+                        foods.getName(),
+                        enb.getNumber(),
+                        foods.getPrice()
                 ));
                 Toast.makeText(FoodDetail.this, "Added to cart", Toast.LENGTH_SHORT).show();
+
             }
+
         });
+
         collapsingToolbarLayout = findViewById(R.id.collapsing);
         collapsingToolbarLayout.setCollapsedTitleTextAppearance(R.style.CollapseAppbar);
         collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.ExpandedAppbar);
@@ -93,21 +96,20 @@ public class FoodDetail extends AppCompatActivity {
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                 food_id="";
-              //  Log.d(TAG, "onDataChange: " + dataSnapshot.getKey()+foods.getPrice());
-                for(DataSnapshot child :dataSnapshot.getChildren()) {
+                food_id = "";
+                //  Log.d(TAG, "onDataChange: " + dataSnapshot.getKey()+foods.getPrice());
+                for (DataSnapshot child : dataSnapshot.getChildren()) {
                     food_id = child.getKey();
-                    if(dataSnapshot.child(food_id).child("Name").getValue().equals(food_name))
-                    {
+                    if (dataSnapshot.child(food_id).child("Name").getValue().equals(food_name)) {
 
-                        Log.d(TAG, "onDataChange: "+dataSnapshot.child(food_id).getValue());
+                        Log.d(TAG, "onDataChange: " + dataSnapshot.child(food_id).getValue());
 
                         break;
                     }
-                    Log.d(TAG, "onDataChange: " + child.getKey()+","+dataSnapshot.child(food_id).child("Name").getValue().equals(food_name));
+                    Log.d(TAG, "onDataChange: " + child.getKey() + "," + dataSnapshot.child(food_id).child("Name").getValue().equals(food_name));
                 }
-                    //  Toast.makeText(FoodDetail.this, ""+child.getKey(), Toast.LENGTH_SHORT).show();
-               foods = dataSnapshot.child(food_id).getValue(Food.class);
+                //  Toast.makeText(FoodDetail.this, ""+child.getKey(), Toast.LENGTH_SHORT).show();
+                foods = dataSnapshot.child(food_id).getValue(Food.class);
 
                 Picasso.with(FoodDetail.this).load(foods.getImage())
                         .fit()
@@ -116,9 +118,9 @@ public class FoodDetail extends AppCompatActivity {
                 collapsingToolbarLayout.setTitle(foods.getName());
 
                 price.setText(foods.getPrice());
-                Log.d(TAG, "onDataChange: setting price" +foods.getPrice() );
+                Log.d(TAG, "onDataChange: setting price" + foods.getPrice());
 
-               food.setText(foods.getName());
+                food.setText(foods.getName());
             }
 
             @Override
@@ -126,5 +128,7 @@ public class FoodDetail extends AppCompatActivity {
 
             }
         });
+
+
     }
 }
