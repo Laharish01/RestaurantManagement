@@ -15,6 +15,8 @@ import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.example.laharish.Database.Database;
 import com.example.laharish.Model.Food;
 import com.example.laharish.Model.Order;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,6 +36,8 @@ public class FoodDetail extends AppCompatActivity {
     ElegantNumberButton enb;
 
     DatabaseReference ref;
+
+    FirebaseUser currentuser = FirebaseAuth.getInstance().getCurrentUser();
 
     Food foods;
 
@@ -63,7 +67,7 @@ public class FoodDetail extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 new Database(getBaseContext()).addToCart(new Order(
-                        food_id,
+                        currentuser.getDisplayName(),
                         foods.getName(),
                         enb.getNumber(),
                         foods.getPrice()
