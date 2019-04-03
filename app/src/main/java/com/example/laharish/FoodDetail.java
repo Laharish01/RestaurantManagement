@@ -37,6 +37,8 @@ public class FoodDetail extends AppCompatActivity {
 
     DatabaseReference ref;
 
+    FirebaseUser currentuser = FirebaseAuth.getInstance().getCurrentUser();
+
     Food foods;
 
     @Override

@@ -6,18 +6,19 @@ import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.laharish.Interface.ItemClickListener;
 import com.example.laharish.Model.Category;
-
-
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ImageAdapter extends RecyclerView.Adapter<MenuViewHolder> {
@@ -25,9 +26,9 @@ public class ImageAdapter extends RecyclerView.Adapter<MenuViewHolder> {
     private static final String TAG = "ImageAdapter";
 
     private Context mContext;
-    private List<Category> menu;
+    private List<Category> menu= new ArrayList<Category>();
 
-
+    ItemClickListener clickListener;
 
     public ImageAdapter(Context context, List<Category> menus){
         mContext=context;
@@ -43,6 +44,13 @@ public class ImageAdapter extends RecyclerView.Adapter<MenuViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MenuViewHolder menuViewHolder, int i) {
+
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull final MenuViewHolder menuViewHolder, final int i) {
+
+        Log.d(TAG, "onBindViewHolder  : called");
         final Category mmenu=menu.get(i);
         menuViewHolder.txtMenu.setText(mmenu.getName());
         Picasso.with(mContext).load(mmenu.getImage())
@@ -53,15 +61,19 @@ public class ImageAdapter extends RecyclerView.Adapter<MenuViewHolder> {
         menuViewHolder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name= mmenu.getName();
-                Intent foodlist = new Intent(mContext, FoodList.class);
-                foodlist.putExtra("Name", name);
-                Log.d(TAG, "onClick: " + name);
-                mContext.startActivity(foodlist);
+
+
+                Log.d(TAG, "OnClick : clicked on : " + mmenu.getImage());
+                String name = mmenu.getName();
+                Toast.makeText(mContext, ""+ name, Toast.LENGTH_SHORT).show();
+                Intent foodList = new Intent(mContext, FoodList.class);
+                foodList.putExtra("Name" , name);
+                Log.d(TAG, "onClick: clicked" + name);
+                mContext.startActivity(foodList);
             }
         });
-    }
 
+    }
     @Override
     public int getItemCount() {
         return menu.size();
