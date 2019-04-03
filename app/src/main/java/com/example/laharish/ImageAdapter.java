@@ -42,10 +42,6 @@ public class ImageAdapter extends RecyclerView.Adapter<MenuViewHolder> {
         return new MenuViewHolder(v);
     }
 
-    @Override
-    public void onBindViewHolder(@NonNull MenuViewHolder menuViewHolder, int i) {
-
-    }
 
     @Override
     public void onBindViewHolder(@NonNull final MenuViewHolder menuViewHolder, final int i) {
