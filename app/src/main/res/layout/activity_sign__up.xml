@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_Up"
+    android:background="#DCDCDC"
+    >
+
+
+
+        <TextView
+            android:id="@+id/registerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="REGISTER FOR FREE!"
+            android:textColor="#FF4500"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintVertical_bias="0.0"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="152dp"
+            android:layout_height="225dp"
+            android:layout_below="@+id/registerTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/applogo" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/newUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_margin="4dp"
+            android:autofillHints=""
+            android:drawableLeft="@drawable/ic_action_name"
+            android:hint=" Enter your Name"
+            android:inputType="textPersonName"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/newEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newUserName"
+            android:layout_margin="4dp"
+            android:autofillHints=""
+            android:drawableLeft="@drawable/ic_action_name"
+            android:ems="10"
+            android:hint=" Enter your Email"
+            android:inputType="textEmailAddress"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/newpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newEmail"
+            android:autofillHints=""
+            android:drawableLeft="@drawable/password_key"
+            android:hint=" Enter your Password"
+            android:inputType="textPassword"
+            tools:targetApi="o" />
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/nRegister" />
+
+        <TextView
+            android:id="@+id/oldUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8sp"
+            android:layout_marginBottom="8sp"
+            android:gravity="center"
+            android:text="@string/userLogin"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register" />
+
+
+    </LinearLayout>
+</RelativeLayout>
