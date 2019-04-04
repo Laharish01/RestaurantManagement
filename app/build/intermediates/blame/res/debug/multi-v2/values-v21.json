@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Harshvardhan\\Desktop\\User_Registeration-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\Harshvardhan\\Documents\\ITPROJECT150\\HARSH\\restaurantmanagement\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Harshvardhan\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\44a52566152761142a023daf3b6be155\\res\\values-v21\\values-v21.xml",
-                    "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
-                    },
-                    "to": {
-                        "startLines": "270,273,277,281",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "19732,19900,20189,20485",
-                        "endLines": "272,275,279,283",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "19895,20058,20352,20647"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Harshvardhan\\Desktop\\User_Registeration-master\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "source": "C:\\Users\\Harshvardhan\\Documents\\ITPROJECT150\\HARSH\\restaurantmanagement\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -39,6 +20,25 @@
                         "endLines": "10",
                         "endColumns": "12",
                         "endOffsets": "577"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Harshvardhan\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\58db95ce4dda01fa671f668edc896cc2\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "270,273,277,281",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "19732,19900,20189,20485",
+                        "endLines": "272,275,279,283",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "19895,20058,20352,20647"
                     }
                 },
                 {

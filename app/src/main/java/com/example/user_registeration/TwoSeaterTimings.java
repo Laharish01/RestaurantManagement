@@ -68,7 +68,7 @@ class Informing_Table_TypeandName
 {
     public void Table_TypeandName(View view,Intent intent,byte no_of_table)
     {
-        ViewHolder holder= (ViewHolder) view.getTag();
+        ViewHolderSeat holder= (ViewHolderSeat) view.getTag();
         Table temp= (Table) holder.tableNameHolder.getTag();
         intent.putExtra("Table_name",temp.tableName);
         if(no_of_table==6||no_of_table==1)
@@ -81,11 +81,11 @@ class Informing_Table_TypeandName
     }
 
 }
-class ViewHolder
+class ViewHolderSeat
 {
     ImageView tableImage;
     TextView tableNameHolder;
-    ViewHolder(View v)
+    ViewHolderSeat(View v)
     {
         tableImage=v.findViewById(R.id.imageViewTable);
         tableNameHolder=v.findViewById(R.id.textViewTableName);
@@ -164,10 +164,10 @@ class BookingAdapter extends BaseAdapter //BaseAdapter provides rough idea what 
          * we need to
          * 1)get a new reference to the structure table.xml for each grid using LayoutInflator
          * 2)get viewholder (which contains the components which make a grid)from the above reference
-         * 3)store and recycle the ViewHolder to avoid Inflation and findViewById being called repeatedly
+         * 3)store and recycle the ViewHolderSeat to avoid Inflation and findViewById being called repeatedly
          *
          * else (when we are recycling) we need to
-         * a)get reference to the existing ViewHolder (which we had stored)
+         * a)get reference to the existing ViewHolderSeat (which we had stored)
          * b)We need the value of current imageId for this grid
          *      -int parameter to get current item Id
          *      -item Id used to find object of table(.xml)
@@ -178,13 +178,13 @@ class BookingAdapter extends BaseAdapter //BaseAdapter provides rough idea what 
         //convert view tells if we are creating the object for the 1st time or not
         //if 1st time then it has null
         View grid=convertView;
-        ViewHolder holder=null;
+        ViewHolderSeat holder=null;
         if(grid == null)
         {
             LayoutInflater inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             grid=inflater.inflate(R.layout.twotable,parent,false);//take xml file and gives java object
             //grid contains relative layout which is the root of table.xml
-            holder=new ViewHolder(grid);//performing findViewById operation
+            holder=new ViewHolderSeat(grid);//performing findViewById operation
 
             grid.setTag(holder);//stroring holder so that we dont create it again when it can ve recycled
             //setTag is a special method used to store something in a View object
@@ -192,7 +192,7 @@ class BookingAdapter extends BaseAdapter //BaseAdapter provides rough idea what 
         }
         else//recycling ie retrieving the stored holder when recycling
         {
-            holder=(ViewHolder)grid.getTag();
+            holder=(ViewHolderSeat)grid.getTag();
         }
         Table temp=list.get(position);
         holder.tableImage.setImageResource(temp.imageId);

@@ -119,6 +119,11 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string-array name="MainMenu">
+        <item>Entrees</item>
+        <item>Main Course</item>
+        <item>Desserts</item>
+    </string-array>
     <string name="action_settings">Settings</string>
     <string name="DineText">Dine</string>
     <string name="HomeDeliveryText">HomeDelivery</string>
@@ -136,6 +141,12 @@
     <string name="Table_name1">T1</string>
     <string name="Booked_Time">Booked Timings</string>
     <string name="closeButton">CLOSE</string>
+    <string name="title_activity_options">Options</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
 
     <string-array name="Two_Table_names_strings">
         <item>T1</item>
@@ -180,11 +191,6 @@
 
     </string-array>
     <string name="title_activity_navi_draw">NaviDraw</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
 
     <string name="BillHead">BILL</string>
     <string name="OrderList">Your Orders</string>

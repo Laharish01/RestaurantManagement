@@ -1,15 +1,18 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:2:1-49:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\10294e85c30ec8f067e9509055ed235c\AndroidManifest.xml:17:1-24:12
+MERGED from [com.cepheuen.elegant-number-button:lib:1.0.2] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\lib-1.0.2.aar\071dd15e4376dbc1d850f7fd06b195c1\AndroidManifest.xml:2:1-19:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\2eff7942852087b8aee9f720f198c1ee\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\43cec5fcfaedc381ed880a6790f993f8\AndroidManifest.xml:2:1-11:12
+MERGED from [com.firebaseui:firebase-ui-database:4.3.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-4.3.1.aar\781f64a7f78b521d5e7fc83b083b93d1\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-database-16.1.0.aar\1f89c7b2a4c2b28970b9613d5d3d1283\AndroidManifest.xml:15:1-36:12
 MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.8.aar\c977962ac7b2bb39de812a9eecce70f3\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.2.0.aar\f2404e2a3d1e06c95e3c53a29602509b\AndroidManifest.xml:17:1-42:12
+MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\com.amulyakhare.textdrawable-1.0.1.aar\3ee2c88ae0ee5124575a990223a8cfef\AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\26ded7fb4e8ff9fc62593dc6adcc949b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\3abe36e4223728eeeeff676edf23da2c\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.4.0.aar\e9116ec521515598d57d5dd44069fcdb\AndroidManifest.xml:2:1-9:12
@@ -28,7 +31,7 @@ MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\Harshva
 MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\b0cbc23eb8394fb29c66203df967a919\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\6cf49888df6c7f6a88e1b066088767d7\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\4b38398ebb0c0c89243c066a71b63665\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\67665fdc90517c7e01e2c873b5192eab\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\6e60f3ec5f210240e78c9cc673809d6c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\13866b11763bc3d8d00dc54389b22e00\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\596bb2dfa6b276cd67bc45d1ece469de\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\6ee77897ed78821bd454fb253a098072\AndroidManifest.xml:17:1-22:12
@@ -44,11 +47,12 @@ MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Harshvardhan
 MERGED from [com.android.support:customview:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\577c0b90ced70fdb780495f4484badbc\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\3e602871662072ab04e318b2fe8d1d6d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\a8cf74ba07788f8b60f20bb6fd77122b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\44a52566152761142a023daf3b6be155\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\58db95ce4dda01fa671f668edc896cc2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\07aa730fdd1e2043ad681c7e6cc05f4c\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a172784f1b27a677b90c89956dfc7e95\AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\4555e6d8319c1480085281bffd04b52a\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\df543ad017743205a9dd1b613b93f668\AndroidManifest.xml:17:1-22:12
+MERGED from [com.firebaseui:firebase-ui-common:4.3.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-ui-common-4.3.1.aar\c3141c18cec91d25aee4461dff451c9f\AndroidManifest.xml:2:1-11:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\d388428aa99ccd98dd879984fc2e5d12\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\41180ec23212ade9f6b60d403d9c5a07\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\38fa8865212bfa9926799aaabb56d479\AndroidManifest.xml:17:1-22:12
@@ -59,25 +63,27 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Harshvardhan\.gradl
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\58eb53a9e394257064980d15d0e5ec2e\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\62aa6cf543faeb107d5d86c37288c82d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-database-collection-16.0.1.aar\413c90864b7d3a46a23ea3fd3ac472a1\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:2:1-49:12
 	package
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:3:5-45
-		INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:3:5-45
+		INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:2:1-44:12
-		INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:2:1-49:12
+		INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:2:1-44:12
-		INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:2:1-49:12
+		INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.firebaseui:firebase-ui-database:4.3.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-4.3.1.aar\781f64a7f78b521d5e7fc83b083b93d1\AndroidManifest.xml:11:5-67
+MERGED from [com.firebaseui:firebase-ui-database:4.3.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-4.3.1.aar\781f64a7f78b521d5e7fc83b083b93d1\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-database-16.1.0.aar\1f89c7b2a4c2b28970b9613d5d3d1283\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-database-16.1.0.aar\1f89c7b2a4c2b28970b9613d5d3d1283\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1bc9057c5d39e3bb772de920464a5ec7\AndroidManifest.xml:22:5-67
@@ -91,11 +97,21 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\c7686fe0c71ec8b44bb9086aa381ced9\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-measurement-sdk-api-16.4.0.aar\c7686fe0c71ec8b44bb9086aa381ced9\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:7:22-77
 application
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:7:5-42:19
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:10:5-47:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\10294e85c30ec8f067e9509055ed235c\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\10294e85c30ec8f067e9509055ed235c\AndroidManifest.xml:22:5-20
+MERGED from [com.cepheuen.elegant-number-button:lib:1.0.2] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\lib-1.0.2.aar\071dd15e4376dbc1d850f7fd06b195c1\AndroidManifest.xml:11:5-17:19
+MERGED from [com.cepheuen.elegant-number-button:lib:1.0.2] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\lib-1.0.2.aar\071dd15e4376dbc1d850f7fd06b195c1\AndroidManifest.xml:11:5-17:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\43cec5fcfaedc381ed880a6790f993f8\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\43cec5fcfaedc381ed880a6790f993f8\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-database-16.1.0.aar\1f89c7b2a4c2b28970b9613d5d3d1283\AndroidManifest.xml:28:5-34:19
@@ -104,6 +120,8 @@ MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Harshvardhan\.gr
 MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.8.aar\c977962ac7b2bb39de812a9eecce70f3\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.2.0.aar\f2404e2a3d1e06c95e3c53a29602509b\AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-auth:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.2.0.aar\f2404e2a3d1e06c95e3c53a29602509b\AndroidManifest.xml:23:5-40:19
+MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\com.amulyakhare.textdrawable-1.0.1.aar\3ee2c88ae0ee5124575a990223a8cfef\AndroidManifest.xml:12:5-20
+MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\com.amulyakhare.textdrawable-1.0.1.aar\3ee2c88ae0ee5124575a990223a8cfef\AndroidManifest.xml:12:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\3abe36e4223728eeeeff676edf23da2c\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\3abe36e4223728eeeeff676edf23da2c\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.4.0.aar\e9116ec521515598d57d5dd44069fcdb\AndroidManifest.xml:7:5-20
@@ -138,10 +156,6 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\User
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\6cf49888df6c7f6a88e1b066088767d7\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\4b38398ebb0c0c89243c066a71b63665\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\4b38398ebb0c0c89243c066a71b63665\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\67665fdc90517c7e01e2c873b5192eab\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\67665fdc90517c7e01e2c873b5192eab\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\44a52566152761142a023daf3b6be155\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\44a52566152761142a023daf3b6be155\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\07aa730fdd1e2043ad681c7e6cc05f4c\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\07aa730fdd1e2043ad681c7e6cc05f4c\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a172784f1b27a677b90c89956dfc7e95\AndroidManifest.xml:22:5-23:19
@@ -149,117 +163,127 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Harshvardh
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\07aa730fdd1e2043ad681c7e6cc05f4c\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:16:9-40
+activity#com.example.user_registeration.Bill
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:18:9-51
+	android:name
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:18:19-39
 activity#com.example.user_registeration.NaviDraw
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:14:9-17:68
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:19:9-22:59
 	android:label
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:16:13-61
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:21:13-61
 	android:theme
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:17:13-56
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:22:13-56
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:15:13-37
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:20:13-37
 activity#com.example.user_registeration.Choice
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:18:9-20:59
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:23:9-25:59
 	android:theme
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:20:13-56
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:25:13-56
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:19:13-35
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:24:13-35
 activity#com.example.user_registeration.ManagerRefresh
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:21:9-52
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:26:9-52
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:21:19-49
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:26:19-49
 activity#com.example.user_registeration.SetParkingTime
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:22:9-52
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:27:9-52
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:22:19-49
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:27:19-49
 activity#com.example.user_registeration.Parking
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:23:9-45
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:28:9-45
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:23:19-42
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:28:19-42
 activity#com.example.user_registeration.Set_Time
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:24:9-46
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:29:9-46
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:24:19-43
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:29:19-43
 activity#com.example.user_registeration.Show_Timings_Dialog
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:25:9-57
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:30:9-57
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:25:19-54
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:30:19-54
 activity#com.example.user_registeration.TwoSeaterTimings
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:26:9-54
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:31:9-54
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:26:19-51
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:31:19-51
 activity#com.example.user_registeration.TableType
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:27:9-47
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:32:9-47
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:27:19-44
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:32:19-44
 activity#com.example.user_registeration.HomeDeliveryFBMN
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:28:9-54
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:33:9-54
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:28:19-51
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:33:19-51
 activity#com.example.user_registeration.DineFBMN
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:29:9-46
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:34:9-46
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:29:19-43
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:34:19-43
 activity#com.example.user_registeration.Manager_Feedback
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:30:9-54
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:35:9-54
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:30:19-51
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:35:19-51
 activity#com.example.user_registeration.ResetPassword
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:31:9-51
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:36:9-51
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:31:19-48
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:36:19-48
 activity#com.example.user_registeration.Feedback_home_delivery
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:32:9-60
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:37:9-60
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:32:19-57
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:37:19-57
 activity#com.example.user_registeration.Feedback
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:33:9-46
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:38:9-46
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:33:19-43
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:38:19-43
 activity#com.example.user_registeration.sign_Up
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:34:9-45
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:39:9-45
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:34:19-42
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:39:19-42
 activity#com.example.user_registeration.MainActivity
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:35:9-41:20
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:40:9-46:20
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:35:19-47
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:40:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:36:13-40:29
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:41:13-45:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:37:17-69
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:42:17-69
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:37:25-66
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:42:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:39:17-77
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:44:17-77
 	android:name
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml:39:27-74
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:44:27-74
 uses-sdk
-INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:design:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\10294e85c30ec8f067e9509055ed235c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\10294e85c30ec8f067e9509055ed235c\AndroidManifest.xml:20:5-44
+MERGED from [com.cepheuen.elegant-number-button:lib:1.0.2] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\lib-1.0.2.aar\071dd15e4376dbc1d850f7fd06b195c1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.cepheuen.elegant-number-button:lib:1.0.2] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\lib-1.0.2.aar\071dd15e4376dbc1d850f7fd06b195c1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\2eff7942852087b8aee9f720f198c1ee\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\2eff7942852087b8aee9f720f198c1ee\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\43cec5fcfaedc381ed880a6790f993f8\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\43cec5fcfaedc381ed880a6790f993f8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebaseui:firebase-ui-database:4.3.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-4.3.1.aar\781f64a7f78b521d5e7fc83b083b93d1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-database:4.3.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-ui-database-4.3.1.aar\781f64a7f78b521d5e7fc83b083b93d1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-database-16.1.0.aar\1f89c7b2a4c2b28970b9613d5d3d1283\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-database-16.1.0.aar\1f89c7b2a4c2b28970b9613d5d3d1283\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.8.aar\c977962ac7b2bb39de812a9eecce70f3\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.8.aar\c977962ac7b2bb39de812a9eecce70f3\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.2.0.aar\f2404e2a3d1e06c95e3c53a29602509b\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.2.0.aar\f2404e2a3d1e06c95e3c53a29602509b\AndroidManifest.xml:21:5-44
+MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\com.amulyakhare.textdrawable-1.0.1.aar\3ee2c88ae0ee5124575a990223a8cfef\AndroidManifest.xml:8:5-10:41
+MERGED from [com.amulyakhare:com.amulyakhare.textdrawable:1.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\com.amulyakhare.textdrawable-1.0.1.aar\3ee2c88ae0ee5124575a990223a8cfef\AndroidManifest.xml:8:5-10:41
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\26ded7fb4e8ff9fc62593dc6adcc949b\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-flags-16.0.1.aar\26ded7fb4e8ff9fc62593dc6adcc949b\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-16.0.1.aar\3abe36e4223728eeeeff676edf23da2c\AndroidManifest.xml:5:5-44
@@ -296,8 +320,8 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\User
 MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\6cf49888df6c7f6a88e1b066088767d7\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\4b38398ebb0c0c89243c066a71b63665\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\4b38398ebb0c0c89243c066a71b63665\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\67665fdc90517c7e01e2c873b5192eab\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\67665fdc90517c7e01e2c873b5192eab\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\6e60f3ec5f210240e78c9cc673809d6c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\6e60f3ec5f210240e78c9cc673809d6c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\13866b11763bc3d8d00dc54389b22e00\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\13866b11763bc3d8d00dc54389b22e00\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\596bb2dfa6b276cd67bc45d1ece469de\AndroidManifest.xml:20:5-44
@@ -328,8 +352,8 @@ MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Harshvardha
 MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\3e602871662072ab04e318b2fe8d1d6d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\a8cf74ba07788f8b60f20bb6fd77122b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\a8cf74ba07788f8b60f20bb6fd77122b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\44a52566152761142a023daf3b6be155\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\44a52566152761142a023daf3b6be155\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\58db95ce4dda01fa671f668edc896cc2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\58db95ce4dda01fa671f668edc896cc2\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\07aa730fdd1e2043ad681c7e6cc05f4c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\07aa730fdd1e2043ad681c7e6cc05f4c\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a172784f1b27a677b90c89956dfc7e95\AndroidManifest.xml:20:5-44
@@ -338,6 +362,8 @@ MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Harshvardhan\.gr
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\4555e6d8319c1480085281bffd04b52a\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\df543ad017743205a9dd1b613b93f668\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\df543ad017743205a9dd1b613b93f668\AndroidManifest.xml:20:5-44
+MERGED from [com.firebaseui:firebase-ui-common:4.3.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-ui-common-4.3.1.aar\c3141c18cec91d25aee4461dff451c9f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-common:4.3.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-ui-common-4.3.1.aar\c3141c18cec91d25aee4461dff451c9f\AndroidManifest.xml:7:5-9:41
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\d388428aa99ccd98dd879984fc2e5d12\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\d388428aa99ccd98dd879984fc2e5d12\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\41180ec23212ade9f6b60d403d9c5a07\AndroidManifest.xml:20:5-44
@@ -358,18 +384,16 @@ MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Harshvardhan\.gradle\cach
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\62aa6cf543faeb107d5d86c37288c82d\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-database-collection-16.0.1.aar\413c90864b7d3a46a23ea3fd3ac472a1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-database-collection-16.0.1.aar\413c90864b7d3a46a23ea3fd3ac472a1\AndroidManifest.xml:5:5-44
-INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
-	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\67665fdc90517c7e01e2c873b5192eab\AndroidManifest.xml:23:9-51
+INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Harshvardhan\Desktop\User_Registeration-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-database:16.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\firebase-database-16.1.0.aar\1f89c7b2a4c2b28970b9613d5d3d1283\AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.4.0.aar\1bc9057c5d39e3bb772de920464a5ec7\AndroidManifest.xml:23:5-79
@@ -554,11 +578,3 @@ ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Harsh
 		ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\4b38398ebb0c0c89243c066a71b63665\AndroidManifest.xml:25:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.2.0.aar\4b38398ebb0c0c89243c066a71b63665\AndroidManifest.xml:24:13-58
-meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\67665fdc90517c7e01e2c873b5192eab\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\44a52566152761142a023daf3b6be155\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\44a52566152761142a023daf3b6be155\AndroidManifest.xml:26:9-28:38
-	android:value
-		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\67665fdc90517c7e01e2c873b5192eab\AndroidManifest.xml:28:13-35
-	android:name
-		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\67665fdc90517c7e01e2c873b5192eab\AndroidManifest.xml:27:13-51
