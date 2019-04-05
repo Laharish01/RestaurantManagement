@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity
         if(user!=null)
         {
             finish();
-            startActivity(new Intent(MainActivity.this,NaviDraw.class));
+            startActivity(new Intent(MainActivity.this,Home.class));
         }
 
         Homepage_Variables();
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity
                 if(task.isSuccessful())
                 {
                     Toast.makeText(MainActivity.this,"Login Successful!!!",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this,Choice.class));
+                    startActivity(new Intent(MainActivity.this,NaviDraw.class));
                     correct_credentials=true;
                 }
                 else

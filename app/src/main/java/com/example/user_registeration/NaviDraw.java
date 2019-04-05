@@ -13,9 +13,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class NaviDraw extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    Button homeDel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,17 @@ public class NaviDraw extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //load menu
+
+
+        homeDel=findViewById(R.id.homeDel);
+        homeDel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(NaviDraw.this, MainMenu.class));
+            }
+        });
     }
 
     @Override

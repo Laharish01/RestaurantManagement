@@ -20,9 +20,6 @@
             android:name=".NaviDraw"
             android:label="@string/title_activity_navi_draw"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Choice"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ManagerRefresh" />
         <activity android:name=".SetParkingTime" />
         <activity android:name=".Parking" />
@@ -37,13 +34,19 @@
         <activity android:name=".Feedback_home_delivery" />
         <activity android:name=".Feedback" />
         <activity android:name=".sign_Up" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Home"/>
+        <activity android:name=".Cart"/>
+        <activity android:name=".FoodList"/>
+        <activity android:name=".FoodDetail"/>
+        <activity android:name=".MainMenu"/>
     </application>
 
 </manifest>

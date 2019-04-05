@@ -30,4 +30,11 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
+    <Button
+        android:id="@+id/homeDel"
+        android:layout_width="138dp"
+        android:layout_height="83dp"
+        android:text="HomeDelivery"
+        android:layout_gravity="center"/>
+
 </android.support.design.widget.CoordinatorLayout>

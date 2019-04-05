@@ -1064,9 +1064,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable dessert
 drawable diner
-drawable entree
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_action_name
@@ -1087,7 +1085,6 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_restaurant_black_24dp
-drawable maincourse
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1234,7 +1231,6 @@ id disableHome
 id displayET
 id displayST
 id drawer_layout
-id editText
 id edit_query
 id end
 id end_padder
