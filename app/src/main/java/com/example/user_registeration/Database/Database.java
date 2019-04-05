@@ -18,7 +18,8 @@ public class Database extends SQLiteAssetHelper {
     private static final String DB_NAME = "RMA.db";
     private static final int DB_VER = 1;
 
-    public Database(Context context) {
+    public Database(Context context)
+    {
         super(context, DB_NAME, null, DB_VER);
     }
 
@@ -29,7 +30,7 @@ public class Database extends SQLiteAssetHelper {
 
         String[] sqlSelect = {"ProductId","ProductName","Quantity","Price"};
         qb.setTables("OrderDetails");
-        Cursor c = qb.query(db, sqlSelect, null,null,null,null,null);
+        Cursor c = qb.query(db, sqlSelect, null,null,null,null,null);//
 
         final List<Order> result = new ArrayList<>();
         if(c.moveToFirst())

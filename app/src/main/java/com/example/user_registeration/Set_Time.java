@@ -96,6 +96,7 @@ public class Set_Time extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //startActivity(new Intent(Set_Time.this,Home.class));
 
     }
     @Override

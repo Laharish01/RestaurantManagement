@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity
                     {
                         if(check_user_information())
                         {
-                            startActivity(new Intent(MainActivity.this , Choice.class));
+                            startActivity(new Intent(MainActivity.this , NaviDraw.class));
                         }
                     }
 
