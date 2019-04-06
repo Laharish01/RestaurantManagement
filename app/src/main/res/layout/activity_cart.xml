@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="12dp"
 
-    tools:context="com.example.user_registeration.Cart">
+    tools:context="com.example.user_registeration.CartHD">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/listCart"

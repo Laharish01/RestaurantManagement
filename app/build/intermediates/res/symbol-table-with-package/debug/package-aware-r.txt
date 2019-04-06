@@ -1414,7 +1414,6 @@ id submenuarrow
 id submit_area
 id subtract_btn
 id tabMode
-id table_book
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
@@ -1425,6 +1424,7 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
+id textView3
 id textView4
 id textViewStartingTime
 id textViewTableName

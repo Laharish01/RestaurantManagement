@@ -1,5 +1,6 @@
 package com.example.user_registeration;
 
+import android.app.AlertDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -64,6 +65,7 @@ public class Set_Time extends AppCompatActivity {
                             if(ans)
                             {
                                 Toast.makeText(getApplicationContext(),"Available",Toast.LENGTH_SHORT).show();
+
                             }
                             else
                             {

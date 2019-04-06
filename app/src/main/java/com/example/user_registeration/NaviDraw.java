@@ -70,7 +70,7 @@ public class NaviDraw extends AppCompatActivity
         });
 
 
-        useremail.setText(currentuser.getEmail());
+       // useremail.setText(currentuser.getEmail());
         Log.d(TAG, "onCreate: " + currentuser.getEmail());
     }
 
@@ -141,7 +141,7 @@ public class NaviDraw extends AppCompatActivity
         firebaseAuth.signOut();
         Toast.makeText(NaviDraw.this, "Logout Successful!!!", Toast.LENGTH_SHORT).show();
         finish();
-        // startActivity(new Intent(Home.this, Login.class));
+        startActivity(new Intent(NaviDraw.this, MainActivity.class));
     }
 
 }

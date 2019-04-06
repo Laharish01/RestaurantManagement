@@ -104,11 +104,11 @@ public final class R {
         public static final int save_image_matrix = 0x7f0a0103;
         public static final int save_non_transition_alpha = 0x7f0a0104;
         public static final int save_scale_type = 0x7f0a0105;
-        public static final int tag_transition_group = 0x7f0a0133;
-        public static final int tag_unhandled_key_event_manager = 0x7f0a0134;
-        public static final int tag_unhandled_key_listeners = 0x7f0a0135;
-        public static final int text = 0x7f0a0136;
-        public static final int text2 = 0x7f0a0137;
+        public static final int tag_transition_group = 0x7f0a0132;
+        public static final int tag_unhandled_key_event_manager = 0x7f0a0133;
+        public static final int tag_unhandled_key_listeners = 0x7f0a0134;
+        public static final int text = 0x7f0a0135;
+        public static final int text2 = 0x7f0a0136;
         public static final int time = 0x7f0a0144;
         public static final int title = 0x7f0a0145;
         public static final int transition_current_scene = 0x7f0a014e;

@@ -43,7 +43,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Home"/>
-        <activity android:name=".Cart"/>
+        <activity android:name=".CartHD"/>
         <activity android:name=".FoodList"/>
         <activity android:name=".FoodDetail"/>
         <activity android:name=".MainMenu"/>

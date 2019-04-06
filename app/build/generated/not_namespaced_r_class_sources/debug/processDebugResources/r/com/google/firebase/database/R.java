@@ -153,8 +153,8 @@ public final class R {
         public static final int right_side = 0x7f0a00ff;
         public static final int standard = 0x7f0a012a;
         public static final int status_bar_latest_event_content = 0x7f0a012c;
-        public static final int text = 0x7f0a0136;
-        public static final int text2 = 0x7f0a0137;
+        public static final int text = 0x7f0a0135;
+        public static final int text2 = 0x7f0a0136;
         public static final int time = 0x7f0a0144;
         public static final int title = 0x7f0a0145;
         public static final int wide = 0x7f0a015b;

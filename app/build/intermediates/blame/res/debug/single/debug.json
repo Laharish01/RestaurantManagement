@@ -72,16 +72,16 @@
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/color/abc_tint_spinner.xml"
     },
     {
-        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
-        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/layout_abc_action_mode_close_item_material.xml.flat",
+        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/layout_abc_action_mode_close_item_material.xml.flat",
-        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/layout/abc_action_mode_close_item_material.xml"
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
+        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/layout_activity_choice.xml.flat",
@@ -104,12 +104,12 @@
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/c5068d8436499241416d2cee87fbcf75/res/layout-sw600dp-v13/design_layout_snackbar.xml"
     },
     {
-        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/anim_abc_grow_fade_in_from_bottom.xml.flat",
@@ -120,24 +120,24 @@
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
-        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
-    },
-    {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/21024047fdf6044582ade85e8a0739a9/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
+        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/21024047fdf6044582ade85e8a0739a9/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
     },
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable_ic_mtrl_chip_close_circle.xml.flat",
@@ -248,20 +248,20 @@
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c4e1472c2a53ca781431a0ca157d3735/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
     },
     {
-        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_mtrl_layout_snackbar.xml.flat",
-        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/c5068d8436499241416d2cee87fbcf75/res/layout-sw600dp-v13/mtrl_layout_snackbar.xml"
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_mtrl_layout_snackbar.xml.flat",
+        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/c5068d8436499241416d2cee87fbcf75/res/layout-sw600dp-v13/mtrl_layout_snackbar.xml"
     },
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_dark.xml.flat",
@@ -288,12 +288,12 @@
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/c5068d8436499241416d2cee87fbcf75/res/layout/design_navigation_item.xml"
     },
     {
-        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/layout_mtrl_layout_snackbar.xml.flat",
-        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/c5068d8436499241416d2cee87fbcf75/res/layout/mtrl_layout_snackbar.xml"
-    },
-    {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat",
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/c4e1472c2a53ca781431a0ca157d3735/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/layout_mtrl_layout_snackbar.xml.flat",
+        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/c5068d8436499241416d2cee87fbcf75/res/layout/mtrl_layout_snackbar.xml"
     },
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -304,12 +304,12 @@
         "source": "/home/laharish/RestaurantManagement-harshnew/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable_ic_menu_camera.xml.flat",
@@ -356,12 +356,12 @@
         "source": "/home/laharish/RestaurantManagement-harshnew/app/src/main/res/layout/app_bar_home.xml"
     },
     {
-        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_material.xml.flat",
-        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/layout/abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat",
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_material.xml.flat",
+        "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/242c15a13cfc757ddd5cfb18f0398514/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat",
@@ -606,6 +606,10 @@
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/color_mtrl_tabs_legacy_text_color_selector.xml.flat",
         "source": "/home/laharish/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/c5068d8436499241416d2cee87fbcf75/res/color/mtrl_tabs_legacy_text_color_selector.xml"
+    },
+    {
+        "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/drawable_ic_exit_to_app_black_24dp.xml.flat",
+        "source": "/home/laharish/RestaurantManagement-harshnew/app/src/main/res/drawable/ic_exit_to_app_black_24dp.xml"
     },
     {
         "merged": "/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat",

@@ -87,7 +87,7 @@ public class MainMenu extends AppCompatActivity {
         fab.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainMenu.this, Cart.class));
+                startActivity(new Intent(MainMenu.this, CartHD.class));
             }
         });
 

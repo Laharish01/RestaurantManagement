@@ -4,10 +4,7 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/table_book"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/Table" />
+
         <item
             android:id="@+id/parking_select"
             android:icon="@drawable/ic_menu_gallery"
@@ -24,6 +21,10 @@
             android:id="@+id/FeedbackManager"
             android:icon="@drawable/ic_remove_red_eye_black_24dp"
             android:title="@string/FeedbackText" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Logout"/>
 
 
     </group>

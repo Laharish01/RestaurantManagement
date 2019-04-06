@@ -603,9 +603,9 @@ public final class R {
         public static final int submit_area = 0x7f0a012f;
         public static final int subtract_btn = 0x7f0a0130;
         public static final int tabMode = 0x7f0a0131;
-        public static final int text = 0x7f0a0136;
-        public static final int text2 = 0x7f0a0137;
-        public static final int textSpacerNoButtons = 0x7f0a0138;
+        public static final int text = 0x7f0a0135;
+        public static final int text2 = 0x7f0a0136;
+        public static final int textSpacerNoButtons = 0x7f0a0137;
         public static final int time = 0x7f0a0144;
         public static final int title = 0x7f0a0145;
         public static final int title_template = 0x7f0a0147;

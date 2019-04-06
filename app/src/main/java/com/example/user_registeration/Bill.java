@@ -35,7 +35,7 @@ public class Bill extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bill);
         database = FirebaseDatabase.getInstance();
-        databaseRef = database.getReference().child("Request");
+        databaseRef = database.getReference().child("RequestHD");
         Variables();
         list = new ArrayList <>();
         arrayAdapter = new ArrayAdapter <>(this, android.R.layout.simple_list_item_1, list);
