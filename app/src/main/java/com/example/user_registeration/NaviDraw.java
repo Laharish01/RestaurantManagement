@@ -29,7 +29,11 @@ public class NaviDraw extends AppCompatActivity
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseUser currentuser = firebaseAuth.getCurrentUser();
 
+    FloatingActionButton fab;
+
     TextView username, useremail;
+
+     String HDorDine="\0";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +62,7 @@ public class NaviDraw extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(NaviDraw.this, MainMenu.class));
+                HDorDine = "homedel";
             }
         });
 
@@ -66,12 +71,25 @@ public class NaviDraw extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(NaviDraw.this, TableType.class));
+                HDorDine = "dine";
+
             }
         });
 
 
        // useremail.setText(currentuser.getEmail());
         Log.d(TAG, "onCreate: " + currentuser.getEmail());
+
+        //To take the user to the cart
+        fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent putHDorDine = new Intent(NaviDraw.this, CartHD.class);
+                putHDorDine.putExtra("HDorDine",HDorDine);
+                startActivity(putHDorDine);
+            }
+        });
     }
 
     @Override

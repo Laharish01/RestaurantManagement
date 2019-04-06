@@ -42,7 +42,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home"/>
         <activity android:name=".CartHD"/>
         <activity android:name=".FoodList"/>
         <activity android:name=".FoodDetail"/>

@@ -8,7 +8,7 @@ public class RequestHD {
     private String address;
     private String total;
     private List<Order> foods;
-
+    private String ST;
 
     public RequestHD() {
     }
@@ -23,7 +23,10 @@ public class RequestHD {
         this.foods = foods;
     }
 
+    public static void getStartingTime(String ST){
+        ST = ST;
 
+    }
 
     public String getName() {
         return name;

@@ -6,7 +6,7 @@
     density="xhdpi"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1554554663383"
+    timestamp="1554565382730"
     token="-7180278725733164422"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -36,10 +36,10 @@
         location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
     <artifact
         location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -48,10 +48,10 @@
         location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
         type="SPLIT" />
     <artifact
-        location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
     <artifact
         location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -65,7 +65,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1554554663383"
+        timestamp="1554565382730"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
@@ -80,10 +80,10 @@
             location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -92,10 +92,10 @@
             location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
             location="/home/laharish/RestaurantManagement-harshnew/app/build/intermediates/split-apk/debug/slices/slice_3.apk"

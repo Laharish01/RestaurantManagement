@@ -1,6 +1,7 @@
 package com.example.user_registeration;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -42,6 +43,7 @@ public class CartHD extends AppCompatActivity {
 
     String name;
     DatabaseReference nameref;
+     String HDorDine;
 
     List<Order> cart = new ArrayList<>();
     CartAdapter adapter;
@@ -57,12 +59,18 @@ public class CartHD extends AppCompatActivity {
         layoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
+        final Intent but = getIntent();
+        HDorDine = but.getStringExtra("HDorDine");
+        Toast.makeText(this, ""+HDorDine, Toast.LENGTH_SHORT).show();
+
         xtotal = findViewById(R.id.total);
         btnPlace=findViewById(R.id.btnPlaceOrder);
         btnPlace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(HDorDine.equals("homedel"))
                 showAlertDialog();
+                else Toast.makeText(CartHD.this, "Wait not yet done!", Toast.LENGTH_SHORT).show();
             }
         });
         loadListFood();

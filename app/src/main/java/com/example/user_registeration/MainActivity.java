@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity
         if(user!=null)
         {
             finish();
-            startActivity(new Intent(MainActivity.this,Home.class));
+            startActivity(new Intent(MainActivity.this,NaviDraw.class));
         }
 
         Homepage_Variables();

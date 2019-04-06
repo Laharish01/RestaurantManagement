@@ -9,7 +9,7 @@ public class RequestDine {
     private String address;
     private String total;
     private List<Order> foods;
-    private String Timings;
+    private String timings;
 
     public RequestDine() {
     }
@@ -20,13 +20,13 @@ public class RequestDine {
         this.name = name;
         this.address = address;
         this.total = total;
-        this.Timings = timings;
+        this.timings = timings;
         this.foods = foods;
     }
 
-    public String getTimings() { return Timings; }
+    public String getTimings() { return timings; }
 
-    public void setTimings(String timings) { Timings = timings; }
+    public void setTimings(String timings) { timings = timings; }
 
     public String getName() {
         return name;

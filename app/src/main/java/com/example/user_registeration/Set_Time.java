@@ -1,6 +1,7 @@
 package com.example.user_registeration;
 
 import android.app.AlertDialog;
+import android.app.DownloadManager;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -12,6 +13,8 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.example.user_registeration.Model.RequestDine;
+import com.example.user_registeration.Model.RequestDine.*;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -62,9 +65,8 @@ public class Set_Time extends AppCompatActivity {
 
                             String timingsReceived = dataSnapshot.getValue().toString();
                             boolean ans=SplitAndCheck(timingsReceived);
-                            if(ans)
-                            {
-                                Toast.makeText(getApplicationContext(),"Available",Toast.LENGTH_SHORT).show();
+                            if(ans) {
+                                Toast.makeText(getApplicationContext(), "Available", Toast.LENGTH_SHORT).show();
 
                             }
                             else
