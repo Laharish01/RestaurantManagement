@@ -29,6 +29,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.user_registeration.ListOrders" />
+        <activity android:name="com.example.user_registeration.Chef" />
         <activity android:name="com.example.user_registeration.Bill" />
         <activity
             android:name="com.example.user_registeration.NaviDraw"
@@ -56,7 +58,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.user_registeration.CartHD" />
+        <activity android:name="com.example.user_registeration.Home" />
+        <activity android:name="com.example.user_registeration.Cart" />
         <activity android:name="com.example.user_registeration.FoodList" />
         <activity android:name="com.example.user_registeration.FoodDetail" />
         <activity android:name="com.example.user_registeration.MainMenu" />
@@ -145,11 +148,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.example.user_registeration.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

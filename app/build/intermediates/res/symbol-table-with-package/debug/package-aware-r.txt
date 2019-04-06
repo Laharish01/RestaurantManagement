@@ -1084,7 +1084,10 @@ drawable ic_menu_slideshow
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+<<<<<<< HEAD
 drawable ic_remove_red_eye_black_24dp
+=======
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 drawable ic_restaurant_black_24dp
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1119,6 +1122,12 @@ id CleanText
 id ComfortText
 id ConfirmBill
 id ConfirmParking
+<<<<<<< HEAD
+=======
+id ConfirmTable
+id Delivery
+id Dine
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id ETbutton
 id FUNCTION
 id FeedbackManager
@@ -1129,6 +1138,10 @@ id FourWheeler
 id FriendText
 id Linear
 id LinearLayoutMN
+<<<<<<< HEAD
+=======
+id ListOrder
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id ListViewMNFB
 id ListViewMN_DineFB
 id ListViewMN_HDFB
@@ -1138,6 +1151,10 @@ id PackagingText
 id ParkingText
 id PresentationText
 id QualityText
+<<<<<<< HEAD
+=======
+id RefreshManager
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id Refresh_Ratings
 id Refresh_Timing
 id SHIFT
@@ -1146,6 +1163,11 @@ id SYM
 id SettingText
 id Show_Prev_Time
 id SpeedText
+<<<<<<< HEAD
+=======
+id StTime
+id TableName
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id TasteText
 id TotalPrice
 id TotalPriceText
@@ -1215,8 +1237,11 @@ id container
 id content
 id contentPanel
 id coordinator
+<<<<<<< HEAD
 id current_user
 id current_useremail
+=======
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id custom
 id customPanel
 id dark
@@ -1249,7 +1274,10 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+<<<<<<< HEAD
 id finedine
+=======
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id fixed
 id food_desc
 id food_layout
@@ -1272,6 +1300,10 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+<<<<<<< HEAD
+=======
+id imageView
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id imageViewTable
 id img_food
 id info
@@ -1414,6 +1446,10 @@ id submenuarrow
 id submit_area
 id subtract_btn
 id tabMode
+<<<<<<< HEAD
+=======
+id table_book
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
@@ -1424,7 +1460,10 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
+<<<<<<< HEAD
 id textView3
+=======
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id textView4
 id textViewStartingTime
 id textViewTableName
@@ -1509,6 +1548,10 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_bill
 layout activity_cart
+<<<<<<< HEAD
+=======
+layout activity_chef
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 layout activity_choice
 layout activity_dine_fbmn
 layout activity_feedback
@@ -1517,6 +1560,10 @@ layout activity_food_detail
 layout activity_food_list
 layout activity_home
 layout activity_home_delivery_fbmn
+<<<<<<< HEAD
+=======
+layout activity_list_orders
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 layout activity_main
 layout activity_main_menu
 layout activity_manager__feedback
@@ -1573,6 +1620,10 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+<<<<<<< HEAD
+=======
+layout order_list_comps
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -1593,6 +1644,12 @@ string Booked_Time
 string CleanText
 string ComfortText
 string Confirm
+<<<<<<< HEAD
+=======
+string ConfirmTable
+string Delivery
+string Dine
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 string DineFB
 string DineText
 string EndingTimeText

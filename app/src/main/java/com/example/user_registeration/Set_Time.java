@@ -1,7 +1,10 @@
 package com.example.user_registeration;
 
+<<<<<<< HEAD
 import android.app.AlertDialog;
 import android.app.DownloadManager;
+=======
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -13,8 +16,11 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import com.example.user_registeration.Model.RequestDine;
 import com.example.user_registeration.Model.RequestDine.*;
+=======
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -29,8 +35,14 @@ public class Set_Time extends AppCompatActivity {
     TimePickerDialog timePickerDialog;
     FirebaseDatabase database=FirebaseDatabase.getInstance();
     DatabaseReference databaseRef;
+<<<<<<< HEAD
     Button STbutton, ETbutton,Availabilitybutton,ShowBooked;
     int hour, minute;
+=======
+    Button STbutton, ETbutton,Availabilitybutton,ShowBooked,Confirm;
+    int hour, minute,position;
+    boolean anstemp;
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
     String ST = "\0", ET = "\0";
 
 
@@ -40,6 +52,11 @@ public class Set_Time extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set__time);
 
+<<<<<<< HEAD
+=======
+        Confirm=findViewById(R.id.ConfirmTable);
+        Availabilitybutton = findViewById(R.id.Availability_button);
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 
 
         final Intent intent=getIntent();
@@ -47,14 +64,22 @@ public class Set_Time extends AppCompatActivity {
         final String tableName=intent.getStringExtra("Table_name");
         final String typeOfChild=intent.getStringExtra("Type_of_Child");
         databaseRef=database.getReference().child("BookedTimings").child(typeOfChild);
+<<<<<<< HEAD
         Availabilitybutton = findViewById(R.id.Availability_button);
+=======
+
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
         Enter_Time();
         Availabilitybutton.setOnClickListener(new View.OnClickListener() {
 
 
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 if (ST != "\0" && ET != "\0")
+=======
+                if (!(ST.equals("\0") && ET.equals("\0")))
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
                 {
 
                     databaseRef.child(tableName).addValueEventListener(new ValueEventListener()
@@ -65,8 +90,16 @@ public class Set_Time extends AppCompatActivity {
 
                             String timingsReceived = dataSnapshot.getValue().toString();
                             boolean ans=SplitAndCheck(timingsReceived);
+<<<<<<< HEAD
                             if(ans) {
                                 Toast.makeText(getApplicationContext(), "Available", Toast.LENGTH_SHORT).show();
+=======
+                            if(ans)
+                            {
+                                Toast.makeText(getApplicationContext(), "Available", Toast.LENGTH_SHORT).show();
+                                Confirm.setEnabled(true);
+                                anstemp=ans;
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 
                             }
                             else
@@ -87,6 +120,32 @@ public class Set_Time extends AppCompatActivity {
 
             }
         });
+<<<<<<< HEAD
+=======
+        Confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(anstemp)
+                {
+                    databaseRef.child(tableName).addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            String temp=String.valueOf(dataSnapshot.getValue());
+                            String addtime=temp+ST.replace(":","") + "-" + ET.replace(":","")+",";
+                            databaseRef.child(tableName).setValue(addtime);
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                }
+                anstemp=false;
+
+            }
+        });
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
         ShowBooked=findViewById(R.id.Show_Prev_Time);
         ShowBooked.setEnabled(false);
 
@@ -146,6 +205,10 @@ public class Set_Time extends AppCompatActivity {
 
     public void Enter_Time()
     {
+<<<<<<< HEAD
+=======
+        Confirm.setEnabled(false);
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
         Calendar calendar = Calendar.getInstance();
         hour = calendar.get(Calendar.HOUR_OF_DAY);
         minute = calendar.get(Calendar.MINUTE);

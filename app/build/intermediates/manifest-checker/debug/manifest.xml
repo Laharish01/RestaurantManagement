@@ -34,6 +34,12 @@
             android:name="com.example.user_registeration.NaviDraw"
             android:label="@string/title_activity_navi_draw"
             android:theme="@style/AppTheme.NoActionBar" />
+<<<<<<< HEAD
+=======
+        <activity
+            android:name="com.example.user_registeration.Choice"
+            android:theme="@style/AppTheme.NoActionBar" />
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
         <activity android:name="com.example.user_registeration.ManagerRefresh" />
         <activity android:name="com.example.user_registeration.SetParkingTime" />
         <activity android:name="com.example.user_registeration.Parking" />
@@ -48,18 +54,25 @@
         <activity android:name="com.example.user_registeration.Feedback_home_delivery" />
         <activity android:name="com.example.user_registeration.Feedback" />
         <activity android:name="com.example.user_registeration.sign_Up" />
+<<<<<<< HEAD
         <activity android:name="com.example.user_registeration.MainActivity" />
         <activity android:name="com.example.user_registeration.splashscreen" >
+=======
+        <activity android:name="com.example.user_registeration.MainActivity" >
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name="com.example.user_registeration.CartHD" />
         <activity android:name="com.example.user_registeration.FoodList" />
         <activity android:name="com.example.user_registeration.FoodDetail" />
         <activity android:name="com.example.user_registeration.MainMenu" />
+=======
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

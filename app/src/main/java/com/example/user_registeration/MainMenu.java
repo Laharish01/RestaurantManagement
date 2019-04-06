@@ -82,7 +82,18 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
 
+=======
+        //To take the user to the cart
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainMenu.this, Cart.class));
+            }
+        });
+>>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 
 
     }
