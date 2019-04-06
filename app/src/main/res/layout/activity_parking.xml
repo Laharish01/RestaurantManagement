@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Parking">
+
+    <Button
+        android:id="@+id/TwoWheeler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TwoWheeler"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <Button
+        android:id="@+id/FourWheeler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TwoWheeler"
+        android:text="@string/FourWheeler"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="236dp" />
+</RelativeLayout>

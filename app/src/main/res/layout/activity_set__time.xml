@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Set_Time">
+
+    <TextView
+        android:id="@+id/textViewStartingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/SetTime"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+    <TextView
+        android:id="@+id/displayST"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="31dp"
+        android:text="@string/StartingTimeText" />
+
+    <Button
+        android:id="@+id/STbutton"
+
+        android:layout_width="170dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="23dp"
+        android:layout_toStartOf="@+id/displayST"
+        android:text="@string/StartingTimeText" />
+
+    <TextView
+        android:id="@+id/displayET"
+
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="29dp"
+        android:text="@string/EndingTimeText" />
+
+    <Button
+        android:id="@+id/ETbutton"
+
+        android:layout_width="170dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginEnd="24dp"
+        android:layout_toStartOf="@+id/displayST"
+        android:text="@string/EndingTimeText" />
+
+    <Button
+        android:id="@+id/Availability_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETbutton"
+        android:layout_marginTop="41dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Availabilty"
+        />
+
+    <Button
+        android:id="@+id/Show_Prev_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Show_Prev_Timings"
+        android:layout_below="@+id/Availability_button"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/table_book"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/Table" />
+        <item
+            android:id="@+id/parking_select"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/ParkingText" />
+        <item
+            android:id="@+id/feedbackDine"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/DineFB" />
+        <item
+            android:id="@+id/feedbackHd"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/HomeDeliveryFB" />
+        <item
+            android:id="@+id/FeedbackManager"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/FeedbackText" />
+        <item
+            android:id="@+id/RefreshManager"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/Refresh" />
+
+    </group>
+
+
+
+</menu>
