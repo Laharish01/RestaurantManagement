@@ -82,9 +82,7 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-<<<<<<< HEAD
 
-=======
         //To take the user to the cart
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new OnClickListener() {
@@ -93,60 +91,11 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(new Intent(MainMenu.this, Cart.class));
             }
         });
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 
 
     }
 
 }
-/*
-// To display the data onto the screen
-class ImageAdapter extends RecyclerView.Adapter<MenuViewHolder> {
-
-    private Context mContext;
-    private List<Category> menu;
-
-    public ImageAdapter(Context context, List<Category> menus){
-        mContext=context;
-        menu=menus;
-    }
-
-    @NonNull
-    @Override
-    public MenuViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View v= LayoutInflater.from(mContext).inflate(R.layout.menu_item, viewGroup, false);
-        return new MenuViewHolder(v);
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull final MenuViewHolder menuViewHolder, final int i) {
-        final Category mmenu=menu.get(i);
-        menuViewHolder.txtMenu.setText(mmenu.getName());
-        Picasso.with(mContext).load(mmenu.getImage())
-                .fit()
-                .centerCrop()
-                .into(menuViewHolder.img);
-
-        menuViewHolder.setItemClickListener(new ItemClickListener() {
-            @Override
-            public void onClick(View view, int position, boolean isLongClick) {
-                Toast.makeText(mContext, ""+mmenu.getName(), Toast.LENGTH_SHORT).show();
-                Intent foodList = new Intent(mContext, FoodDetail.class);
-                foodList.putExtra("CategoryID", ref.getRef().getKey()) ;
-                view.getContext().startActivity(foodList);}
-
-        });
-    }
-
-
-    @Override
-    public int getItemCount() {
-        return menu.size();
-    }
-}
-}
-*/
-
 
 
 

@@ -50,13 +50,8 @@ public class FoodDetail extends AppCompatActivity {
 
         getIncomingIntent();
 
-<<<<<<< HEAD
-=======
 
-        String ref2 = String.valueOf(ref.orderByChild(food_name).getRef().getKey());
-        Log.d(TAG, "onCreate: " + ref2);
 
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
         if(!food_name.isEmpty())
             getFoodDetail(food_name);
 
@@ -75,11 +70,7 @@ public class FoodDetail extends AppCompatActivity {
                         foods.getPrice()
                 ));
                 Toast.makeText(FoodDetail.this, "Added to cart", Toast.LENGTH_SHORT).show();
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
             }
 
         });
