@@ -133,8 +133,8 @@
     <string name="checkBoxText">Do you want to confirm</string>
     <string name="SpeedText">Speed</string>
     <string name="PackageText">Packing</string>
-    <string name="DineFB">Diner\'s Average Feedbacks</string>
-    <string name="HomeDeliveryFB">Home Delivery Average Feedback</string>
+    <string name="DineFB">Give feedback!</string>
+    <string name="HomeDeliveryFB">Give feedback for home delivery!</string>
     <string name="_2Seater">2</string>
     <string name="_4Seater">4</string>
     <string name="_8Seater">8</string>

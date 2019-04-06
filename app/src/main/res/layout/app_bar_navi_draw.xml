@@ -22,19 +22,18 @@
 
     <include layout="@layout/content_navi_draw" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-
     <Button
         android:id="@+id/homeDel"
         android:layout_width="138dp"
         android:layout_height="83dp"
         android:text="HomeDelivery"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center_horizontal|bottom"/>
+
+    <Button
+        android:id="@+id/finedine"
+        android:layout_width="138dp"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+        android:text="Button" />
 
 </android.support.design.widget.CoordinatorLayout>

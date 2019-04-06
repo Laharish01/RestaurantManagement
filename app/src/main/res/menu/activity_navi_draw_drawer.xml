@@ -14,20 +14,17 @@
             android:title="@string/ParkingText" />
         <item
             android:id="@+id/feedbackDine"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_feedback_black_24dp"
             android:title="@string/DineFB" />
         <item
             android:id="@+id/feedbackHd"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_feedback_black_24dp"
             android:title="@string/HomeDeliveryFB" />
         <item
             android:id="@+id/FeedbackManager"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_remove_red_eye_black_24dp"
             android:title="@string/FeedbackText" />
-        <item
-            android:id="@+id/RefreshManager"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/Refresh" />
+
 
     </group>
 

@@ -1084,6 +1084,7 @@ drawable ic_menu_slideshow
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_remove_red_eye_black_24dp
 drawable ic_restaurant_black_24dp
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1137,7 +1138,6 @@ id PackagingText
 id ParkingText
 id PresentationText
 id QualityText
-id RefreshManager
 id Refresh_Ratings
 id Refresh_Timing
 id SHIFT
@@ -1215,6 +1215,8 @@ id container
 id content
 id contentPanel
 id coordinator
+id current_user
+id current_useremail
 id custom
 id customPanel
 id dark
@@ -1247,6 +1249,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id finedine
 id fixed
 id food_desc
 id food_layout
@@ -1269,7 +1272,6 @@ id icon_group
 id icon_only
 id ifRoom
 id image
-id imageView
 id imageViewTable
 id img_food
 id info

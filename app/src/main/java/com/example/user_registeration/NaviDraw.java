@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,11 +15,21 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class NaviDraw extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private static final String TAG = "NaviDraw";
 
-    Button homeDel;
+    Button homeDel, finedine;
+    FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+    FirebaseUser currentuser = firebaseAuth.getCurrentUser();
+
+    TextView username, useremail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,14 +38,8 @@ public class NaviDraw extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        username = findViewById(R.id.current_user);
+        useremail = findViewById(R.id.current_useremail);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -55,6 +60,18 @@ public class NaviDraw extends AppCompatActivity
                 startActivity(new Intent(NaviDraw.this, MainMenu.class));
             }
         });
+
+        finedine = findViewById(R.id.finedine);
+        finedine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(NaviDraw.this, TableType.class));
+            }
+        });
+
+
+        useremail.setText(currentuser.getEmail());
+        Log.d(TAG, "onCreate: " + currentuser.getEmail());
     }
 
     @Override
@@ -94,11 +111,7 @@ public class NaviDraw extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.table_book ){
-            // Handle the camera action
-            startActivity(new Intent(getApplicationContext(),TableType.class));
-        } else if (id == R.id.parking_select) {
+        if (id == R.id.parking_select) {
             startActivity(new Intent(getApplicationContext(),Parking.class));
 
 
@@ -113,17 +126,22 @@ public class NaviDraw extends AppCompatActivity
         } else if (id == R.id.FeedbackManager) {
             startActivity(new Intent(getApplicationContext(), Manager_Feedback.class));
         }
-        else if (id==R.id.RefreshManager)
-        {
-            startActivity(new Intent(getApplicationContext(), ManagerRefresh.class));
+        else if (id == R.id.logout) {
+            logout();
+
         }
-
-
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    //the logout option
+    public void logout() {
+        firebaseAuth.signOut();
+        Toast.makeText(NaviDraw.this, "Logout Successful!!!", Toast.LENGTH_SHORT).show();
+        finish();
+        // startActivity(new Intent(Home.this, Login.class));
+    }
+
 }
