@@ -103,4 +103,11 @@
         android:layout_below="@+id/Availability_button"
         android:layout_centerHorizontal="true"/>
 
+    <Button
+        android:id="@+id/ConfirmTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Show_Prev_Time"
+        android:text="Button" />
+
 </RelativeLayout>

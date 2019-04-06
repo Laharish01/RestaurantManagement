@@ -25,8 +25,9 @@ public class Set_Time extends AppCompatActivity {
     TimePickerDialog timePickerDialog;
     FirebaseDatabase database=FirebaseDatabase.getInstance();
     DatabaseReference databaseRef;
-    Button STbutton, ETbutton,Availabilitybutton,ShowBooked;
-    int hour, minute;
+    Button STbutton, ETbutton,Availabilitybutton,ShowBooked,Confirm;
+    int hour, minute,position;
+    boolean anstemp;
     String ST = "\0", ET = "\0";
 
 
@@ -36,6 +37,8 @@ public class Set_Time extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set__time);
 
+        Confirm=findViewById(R.id.ConfirmTable);
+        Availabilitybutton = findViewById(R.id.Availability_button);
 
 
         final Intent intent=getIntent();
@@ -43,14 +46,14 @@ public class Set_Time extends AppCompatActivity {
         final String tableName=intent.getStringExtra("Table_name");
         final String typeOfChild=intent.getStringExtra("Type_of_Child");
         databaseRef=database.getReference().child("BookedTimings").child(typeOfChild);
-        Availabilitybutton = findViewById(R.id.Availability_button);
+
         Enter_Time();
         Availabilitybutton.setOnClickListener(new View.OnClickListener() {
 
 
             @Override
             public void onClick(View v) {
-                if (ST != "\0" && ET != "\0")
+                if (!(ST.equals("\0") && ET.equals("\0")))
                 {
 
                     databaseRef.child(tableName).addValueEventListener(new ValueEventListener()
@@ -63,7 +66,10 @@ public class Set_Time extends AppCompatActivity {
                             boolean ans=SplitAndCheck(timingsReceived);
                             if(ans)
                             {
-                                Toast.makeText(getApplicationContext(),"Available",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Available", Toast.LENGTH_SHORT).show();
+                                Confirm.setEnabled(true);
+                                anstemp=ans;
+
                             }
                             else
                             {
@@ -80,6 +86,29 @@ public class Set_Time extends AppCompatActivity {
                         }
                     });
                 }
+
+            }
+        });
+        Confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(anstemp)
+                {
+                    databaseRef.child(tableName).addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            String temp=String.valueOf(dataSnapshot.getValue());
+                            String addtime=temp+ST.replace(":","") + "-" + ET.replace(":","")+",";
+                            databaseRef.child(tableName).setValue(addtime);
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                }
+                anstemp=false;
 
             }
         });
@@ -142,6 +171,7 @@ public class Set_Time extends AppCompatActivity {
 
     public void Enter_Time()
     {
+        Confirm.setEnabled(false);
         Calendar calendar = Calendar.getInstance();
         hour = calendar.get(Calendar.HOUR_OF_DAY);
         minute = calendar.get(Calendar.MINUTE);

@@ -29,6 +29,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.user_registeration.ListOrders" />
+        <activity android:name="com.example.user_registeration.Chef" />
         <activity android:name="com.example.user_registeration.Bill" />
         <activity
             android:name="com.example.user_registeration.NaviDraw"

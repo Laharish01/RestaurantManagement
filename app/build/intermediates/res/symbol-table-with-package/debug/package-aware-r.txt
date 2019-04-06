@@ -1118,6 +1118,9 @@ id CleanText
 id ComfortText
 id ConfirmBill
 id ConfirmParking
+id ConfirmTable
+id Delivery
+id Dine
 id ETbutton
 id FUNCTION
 id FeedbackManager
@@ -1128,6 +1131,7 @@ id FourWheeler
 id FriendText
 id Linear
 id LinearLayoutMN
+id ListOrder
 id ListViewMNFB
 id ListViewMN_DineFB
 id ListViewMN_HDFB
@@ -1146,6 +1150,8 @@ id SYM
 id SettingText
 id Show_Prev_Time
 id SpeedText
+id StTime
+id TableName
 id TasteText
 id TotalPrice
 id TotalPriceText
@@ -1507,6 +1513,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_bill
 layout activity_cart
+layout activity_chef
 layout activity_choice
 layout activity_dine_fbmn
 layout activity_feedback
@@ -1515,6 +1522,7 @@ layout activity_food_detail
 layout activity_food_list
 layout activity_home
 layout activity_home_delivery_fbmn
+layout activity_list_orders
 layout activity_main
 layout activity_main_menu
 layout activity_manager__feedback
@@ -1571,6 +1579,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout order_list_comps
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -1591,6 +1600,9 @@ string Booked_Time
 string CleanText
 string ComfortText
 string Confirm
+string ConfirmTable
+string Delivery
+string Dine
 string DineFB
 string DineText
 string EndingTimeText

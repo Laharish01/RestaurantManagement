@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,8 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".Bill"></activity>
+        <activity android:name=".ListOrders"></activity>
+        <activity android:name=".Chef" />
+        <activity android:name=".Bill" />
         <activity
             android:name=".NaviDraw"
             android:label="@string/title_activity_navi_draw"
@@ -34,7 +34,7 @@
         <activity android:name=".Feedback_home_delivery" />
         <activity android:name=".Feedback" />
         <activity android:name=".sign_Up" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,11 +42,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home"/>
-        <activity android:name=".Cart"/>
-        <activity android:name=".FoodList"/>
-        <activity android:name=".FoodDetail"/>
-        <activity android:name=".MainMenu"/>
+        <activity android:name=".Home" />
+        <activity android:name=".Cart" />
+        <activity android:name=".FoodList" />
+        <activity android:name=".FoodDetail" />
+        <activity android:name=".MainMenu" />
     </application>
 
 </manifest>

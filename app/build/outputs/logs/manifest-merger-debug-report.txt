@@ -107,7 +107,7 @@ ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanageme
 	android:name
 		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:7:22-77
 application
-ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:10:5-50:19
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:9:5-50:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\10294e85c30ec8f067e9509055ed235c\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\10294e85c30ec8f067e9509055ed235c\AndroidManifest.xml:22:5-20
 MERGED from [com.cepheuen.elegant-number-button:lib:1.0.2] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\lib-1.0.2.aar\071dd15e4376dbc1d850f7fd06b195c1\AndroidManifest.xml:11:5-17:19
@@ -163,19 +163,27 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Harshvardh
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Harshvardhan\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\07aa730fdd1e2043ad681c7e6cc05f4c\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.example.user_registeration.ListOrders
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:16:9-57
+	android:name
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:16:19-45
+activity#com.example.user_registeration.Chef
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:17:9-42
+	android:name
+		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:17:19-39
 activity#com.example.user_registeration.Bill
-ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:18:9-51
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:18:9-42
 	android:name
 		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:18:19-39
 activity#com.example.user_registeration.NaviDraw
@@ -243,7 +251,7 @@ ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanageme
 	android:name
 		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:36:19-42
 activity#com.example.user_registeration.MainActivity
-ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:37:9-49
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:37:9-50
 	android:name
 		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:37:19-47
 activity#com.example.user_registeration.splashscreen
@@ -261,23 +269,23 @@ ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanageme
 	android:name
 		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:42:27-74
 activity#com.example.user_registeration.Home
-ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:45:9-41
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:45:9-42
 	android:name
 		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:45:19-39
 activity#com.example.user_registeration.Cart
-ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:46:9-41
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:46:9-42
 	android:name
 		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:46:19-39
 activity#com.example.user_registeration.FoodList
-ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:47:9-45
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:47:9-46
 	android:name
 		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:47:19-43
 activity#com.example.user_registeration.FoodDetail
-ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:48:9-47
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:48:9-48
 	android:name
 		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:48:19-45
 activity#com.example.user_registeration.MainMenu
-ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:49:9-45
+ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:49:9-46
 	android:name
 		ADDED from C:\Users\Harshvardhan\Documents\ITPROJECT150\HARSH\restaurantmanagement\app\src\main\AndroidManifest.xml:49:19-43
 uses-sdk
