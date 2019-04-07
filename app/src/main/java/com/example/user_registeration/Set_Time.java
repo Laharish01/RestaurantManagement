@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,8 +26,10 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Calendar;
 import java.util.Arrays;
+import java.util.Set;
 
 public class Set_Time extends AppCompatActivity {
+    private static final String TAG = "Set_Time";
     TimePickerDialog timePickerDialog;
     FirebaseDatabase database=FirebaseDatabase.getInstance();
     DatabaseReference databaseRef;
@@ -77,9 +80,10 @@ public class Set_Time extends AppCompatActivity {
                             if(ans)
                             {
                                 Toast.makeText(getApplicationContext(), "Available", Toast.LENGTH_SHORT).show();
-                                Confirm.setEnabled(true);
-                                anstemp=ans;
 
+                                anstemp = ans;
+                                Log.d(TAG, "onDataChange: "+ST);
+                                Confirm.setEnabled(true);
                             }
                             else
                             {
@@ -100,6 +104,7 @@ public class Set_Time extends AppCompatActivity {
             }
         });
         Confirm.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 if(anstemp)
@@ -110,6 +115,7 @@ public class Set_Time extends AppCompatActivity {
                             String temp=String.valueOf(dataSnapshot.getValue());
                             String addtime=temp+ST.replace(":","") + "-" + ET.replace(":","")+",";
                             databaseRef.child(tableName).setValue(addtime);
+
                         }
 
                         @Override
@@ -118,7 +124,10 @@ public class Set_Time extends AppCompatActivity {
                         }
                     });
                 }
+                Intent time = new Intent(Set_Time.this, CartHD.class);
+                time.putExtra("time", ST);
                 anstemp=false;
+                startActivity(new Intent(Set_Time.this, MainMenu.class));
 
             }
         });
@@ -128,7 +137,7 @@ public class Set_Time extends AppCompatActivity {
         ShowBooked.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Show_Timings_Dialog.class);
+                Intent intent=new Intent(getBaseContext(),Show_Timings_Dialog.class);
                 intent.putExtra("Table_name",tableName);
                 intent.putExtra("Type_of_Child",typeOfChild);
                // intent.putExtra("STNo_of_tables",no_of_table);

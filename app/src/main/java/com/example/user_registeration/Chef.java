@@ -16,7 +16,7 @@ public class Chef extends AppCompatActivity {
         setContentView(R.layout.activity_chef);
         Dine=findViewById(R.id.Dine);
         Delivery=findViewById(R.id.Delivery);
-        final Intent intent=new Intent(Chef.this,ListOrders.class);
+        /*final Intent intent=new Intent(Chef.this,ListOrders.class);
         Dine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +30,7 @@ public class Chef extends AppCompatActivity {
                 intent.putExtra("Dine/Delivery","Delivery");
                 startActivity(intent);
             }
-        });
+        });*/
     }
 
 }

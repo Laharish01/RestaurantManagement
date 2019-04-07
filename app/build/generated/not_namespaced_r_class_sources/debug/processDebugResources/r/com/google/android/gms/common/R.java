@@ -17,10 +17,6 @@ public final class R {
     public static final class string {
         private string() {}
 
-<<<<<<< HEAD
-        public static final int common_google_play_services_unknown_issue = 0x7f10005f;
-=======
         public static final int common_google_play_services_unknown_issue = 0x7f100062;
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
     }
 }

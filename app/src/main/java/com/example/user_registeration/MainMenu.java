@@ -40,7 +40,9 @@ public class MainMenu extends AppCompatActivity {
 
     Toolbar toolbar;
 
-    String key,TAG;
+    FloatingActionButton fab;
+
+    String key,TAG, HDorDine = "\0";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,15 +84,6 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-
-        //To take the user to the cart
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainMenu.this, Cart.class));
-            }
-        });
 
 
     }

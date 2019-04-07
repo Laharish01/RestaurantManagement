@@ -1070,6 +1070,7 @@ drawable googleg_standard_color_18
 drawable ic_action_name
 drawable ic_add_shopping_cart_black_24dp
 drawable ic_apps_black_24dp
+drawable ic_arrow_forward_black_24dp
 drawable ic_attach_money_black_24dp
 drawable ic_exit_to_app_black_24dp
 drawable ic_feedback_black_24dp
@@ -1084,10 +1085,7 @@ drawable ic_menu_slideshow
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-<<<<<<< HEAD
 drawable ic_remove_red_eye_black_24dp
-=======
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 drawable ic_restaurant_black_24dp
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1122,12 +1120,9 @@ id CleanText
 id ComfortText
 id ConfirmBill
 id ConfirmParking
-<<<<<<< HEAD
-=======
 id ConfirmTable
 id Delivery
 id Dine
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id ETbutton
 id FUNCTION
 id FeedbackManager
@@ -1138,10 +1133,6 @@ id FourWheeler
 id FriendText
 id Linear
 id LinearLayoutMN
-<<<<<<< HEAD
-=======
-id ListOrder
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id ListViewMNFB
 id ListViewMN_DineFB
 id ListViewMN_HDFB
@@ -1151,10 +1142,6 @@ id PackagingText
 id ParkingText
 id PresentationText
 id QualityText
-<<<<<<< HEAD
-=======
-id RefreshManager
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id Refresh_Ratings
 id Refresh_Timing
 id SHIFT
@@ -1163,11 +1150,8 @@ id SYM
 id SettingText
 id Show_Prev_Time
 id SpeedText
-<<<<<<< HEAD
-=======
 id StTime
 id TableName
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id TasteText
 id TotalPrice
 id TotalPriceText
@@ -1205,6 +1189,7 @@ id alertTitle
 id all
 id always
 id ambienceText
+id amt
 id app_bar_layout
 id applogo
 id async
@@ -1214,7 +1199,6 @@ id beginning
 id blocking
 id bottom
 id btnCart
-id btnPlaceOrder
 id buttonPanel
 id buttonSubmit
 id cancel_action
@@ -1233,18 +1217,19 @@ id clip_vertical
 id closeButton
 id collapseActionView
 id collapsing
+id confirm
 id container
 id content
 id contentPanel
 id coordinator
-<<<<<<< HEAD
+id credit
 id current_user
 id current_useremail
-=======
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id custom
 id customPanel
+id cvv
 id dark
+id date
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1258,6 +1243,8 @@ id disableHome
 id displayET
 id displayST
 id drawer_layout
+id ecredit
+id edate
 id edit_query
 id end
 id end_padder
@@ -1267,17 +1254,13 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fab
-id feedback
 id feedbackDine
 id feedbackHd
 id fill
 id fill_horizontal
 id fill_vertical
 id filled
-<<<<<<< HEAD
 id finedine
-=======
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id fixed
 id food_desc
 id food_layout
@@ -1300,10 +1283,6 @@ id icon_group
 id icon_only
 id ifRoom
 id image
-<<<<<<< HEAD
-=======
-id imageView
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id imageViewTable
 id img_food
 id info
@@ -1337,6 +1316,7 @@ id menu_namae
 id message
 id middle
 id mini
+id money
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1346,8 +1326,6 @@ id nav_HD_Feedback
 id nav_Parking
 id nav_Refresh
 id nav_TableSelect
-id nav_cart
-id nav_orders
 id nav_view
 id navigation_header_container
 id nestedScrollView
@@ -1446,10 +1424,6 @@ id submenuarrow
 id submit_area
 id subtract_btn
 id tabMode
-<<<<<<< HEAD
-=======
-id table_book
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
@@ -1460,11 +1434,9 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
-<<<<<<< HEAD
 id textView3
-=======
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 id textView4
+id textView5
 id textViewStartingTime
 id textViewTableName
 id text_input_password_toggle
@@ -1480,6 +1452,7 @@ id toolbarMain
 id top
 id topPanel
 id total
+id totprice
 id touch_outside
 id transition_current_scene
 id transition_layout_save
@@ -1548,28 +1521,21 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_bill
 layout activity_cart
-<<<<<<< HEAD
-=======
 layout activity_chef
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 layout activity_choice
 layout activity_dine_fbmn
 layout activity_feedback
 layout activity_feedback_home_delivery
 layout activity_food_detail
 layout activity_food_list
-layout activity_home
 layout activity_home_delivery_fbmn
-<<<<<<< HEAD
-=======
-layout activity_list_orders
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 layout activity_main
 layout activity_main_menu
 layout activity_manager__feedback
 layout activity_manager_refresh
 layout activity_navi_draw
 layout activity_parking
+layout activity_payment
 layout activity_reset_password
 layout activity_set__time
 layout activity_set_parking_time
@@ -1578,10 +1544,8 @@ layout activity_sign__up
 layout activity_splashscreen
 layout activity_table_type
 layout activity_two_seater_timings
-layout app_bar_home
 layout app_bar_navi_draw
 layout cart_layout
-layout content_home
 layout content_navi_draw
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1620,21 +1584,16 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
-<<<<<<< HEAD
-=======
 layout order_list_comps
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout twotable
 menu activity_navi_draw_drawer
-menu activity_options_drawer
 menu draw_navi
 menu menu
 menu navi_draw
-menu options
 mipmap ic_launcher
 mipmap ic_launcher_round
 string AmbienceText
@@ -1644,12 +1603,9 @@ string Booked_Time
 string CleanText
 string ComfortText
 string Confirm
-<<<<<<< HEAD
-=======
 string ConfirmTable
 string Delivery
 string Dine
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
 string DineFB
 string DineText
 string EndingTimeText

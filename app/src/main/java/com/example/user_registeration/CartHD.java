@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.user_registeration.Database.*;
 import com.example.user_registeration.Model.Order;
+import com.example.user_registeration.Model.RequestDine;
 import com.example.user_registeration.Model.RequestHD;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -39,9 +40,9 @@ public class CartHD extends AppCompatActivity {
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
     TextView xtotal;
-    Button btnPlace;
+    Button btnPlace, checkout;
 
-    String name;
+    String name, tiem;
     DatabaseReference nameref;
      String HDorDine;
 
@@ -52,32 +53,57 @@ public class CartHD extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
 
-        ref=database.getReference("Requests");
-        nameref= ref.child("User").child(user.getUid()).child("Name");
+        Intent time = getIntent();
+        tiem = time.getStringExtra("time");
+        final Intent but = getIntent();
+        HDorDine = but.getStringExtra("HDorDine");
+        //ref=database.getReference("Requests");
+        //nameref= ref.child("User").child(user.getUid()).child("Name");
         recyclerView=findViewById(R.id.listCart);
         recyclerView.setHasFixedSize(true);
         layoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+        Toast.makeText(this, "Starting time" + tiem, Toast.LENGTH_SHORT).show();
+        Log.d(TAG, "onCreate: "+tiem);
 
-        final Intent but = getIntent();
-        HDorDine = but.getStringExtra("HDorDine");
         Toast.makeText(this, ""+HDorDine, Toast.LENGTH_SHORT).show();
-
         xtotal = findViewById(R.id.total);
-        btnPlace=findViewById(R.id.btnPlaceOrder);
+        /*btnPlace=findViewById(R.id.btnPlaceOrder);
         btnPlace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(HDorDine.equals("homedel"))
                 showAlertDialog();
-                else Toast.makeText(CartHD.this, "Wait not yet done!", Toast.LENGTH_SHORT).show();
+                else {
+                    placeOrder();
+                }
+            }
+        });*/
+        checkout = findViewById(R.id.checkout);
+        checkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CartHD.this, Bill.class));
             }
         });
         loadListFood();
 
     }
 
+   /* private void placeOrder() {
+        RequestDine requestDine = new RequestDine(name, xtotal.getText().toString(), cart, tiem, "table1");
+        ref.child(user.getUid())
+                .setValue(requestDine);
+
+        new Database(getBaseContext()).cleanCart();
+        Toast.makeText(CartHD.this, "Order placed, Thank you!", Toast.LENGTH_SHORT).show();
+
+        finish();
+    }
+
     private void showAlertDialog() {
+
+        Intent intent = getIntent();
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(CartHD.this);
         alertDialog.setTitle("One more step!");
         alertDialog.setMessage("Enter your address");
@@ -103,7 +129,8 @@ public class CartHD extends AppCompatActivity {
 
                 );
                 Log.d(TAG, "onClick: "+ user.getDisplayName());
-
+                Intent money = new Intent(CartHD.this, Payment.class);
+                money.putExtra("amount", xtotal.getText().toString());
                 ref.child(user.getUid())
                         .setValue(requestHD);
 
@@ -122,7 +149,7 @@ public class CartHD extends AppCompatActivity {
 
         alertDialog.show();
 
-    }
+    }*/
 
     private void loadListFood() {
         cart = new Database(this).getCarts();

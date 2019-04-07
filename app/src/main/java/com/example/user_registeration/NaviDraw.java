@@ -30,7 +30,6 @@ public class NaviDraw extends AppCompatActivity
     FirebaseUser currentuser = firebaseAuth.getCurrentUser();
 
     FloatingActionButton fab;
-
     TextView username, useremail;
 
      String HDorDine="\0";
@@ -79,7 +78,6 @@ public class NaviDraw extends AppCompatActivity
 
        // useremail.setText(currentuser.getEmail());
         Log.d(TAG, "onCreate: " + currentuser.getEmail());
-
         //To take the user to the cart
         fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -90,6 +88,9 @@ public class NaviDraw extends AppCompatActivity
                 startActivity(putHDorDine);
             }
         });
+
+
+
     }
 
     @Override
@@ -129,7 +130,8 @@ public class NaviDraw extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        if (id == R.id.parking_select) {
+
+         if (id == R.id.parking_select) {
             startActivity(new Intent(getApplicationContext(),Parking.class));
 
 

@@ -1,6 +1,5 @@
 #Internal package file, do not edit.
-<<<<<<< HEAD
-#Sat Apr 06 20:56:45 IST 2019
+#Sun Apr 07 10:36:34 IST 2019
 4.path=classes.dex
 8.set=DEX
 6.path=classes.dex
@@ -50,19 +49,3 @@ count=12
 0.path=databases/RMA.db
 1.set=DEX
 2.path=classes.dex
-=======
-#Thu Apr 04 12:41:27 IST 2019
-1.base=C\:\\Users\\Harshvardhan\\Documents\\ITPROJECT150\\HARSH\\restaurantmanagement\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
-2.path=databases/RMA.db
-0.baseType=DIRECTORY
-2.base=C\:\\Users\\Harshvardhan\\Documents\\ITPROJECT150\\HARSH\\restaurantmanagement\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
-2.set=ASSET
-1.baseType=DIRECTORY
-count=3
-1.set=DEX
-0.path=classes.dex
-0.set=DEX
-0.base=C\:\\Users\\Harshvardhan\\Documents\\ITPROJECT150\\HARSH\\restaurantmanagement\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
-2.baseType=DIRECTORY
-1.path=classes.dex
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870

@@ -6,23 +6,31 @@ import java.util.List;
 public class RequestDine {
 
     private String name;
-    private String address;
+  //  private String address;
     private String total;
     private List<Order> foods;
     private String timings;
+    private String table;
 
     public RequestDine() {
     }
 
 
-    public RequestDine(String name, String address, String total, List<Order> foods, String timings) {
+
+
+    public RequestDine(String name, String total, List<Order> foods, String timings, String table) {
 
         this.name = name;
-        this.address = address;
+     //   this.address = address;
         this.total = total;
         this.timings = timings;
         this.foods = foods;
+        this.table = table;
     }
+
+    public String getTable() { return table; }
+
+    public void setTable(String table) { this.table = table; }
 
     public String getTimings() { return timings; }
 
@@ -36,15 +44,7 @@ public class RequestDine {
         this.name = name;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getTotal() {
+       public String getTotal() {
         return total;
     }
 

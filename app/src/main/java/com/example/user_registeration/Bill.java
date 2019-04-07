@@ -1,8 +1,10 @@
 package com.example.user_registeration;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -36,6 +38,7 @@ public class Bill extends AppCompatActivity {
         setContentView(R.layout.activity_bill);
         database = FirebaseDatabase.getInstance();
         databaseRef = database.getReference().child("RequestHD");
+
         Variables();
         list = new ArrayList <>();
         arrayAdapter = new ArrayAdapter <>(this, android.R.layout.simple_list_item_1, list);
@@ -60,6 +63,13 @@ public class Bill extends AppCompatActivity {
             }
         });
 
+
+        confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Bill.this, Payment.class));
+            }
+        });
     }
 
 

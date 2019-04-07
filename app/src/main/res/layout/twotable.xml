@@ -6,13 +6,10 @@
 
     <ImageView
         android:id="@+id/imageViewTable"
-<<<<<<< HEAD
         android:layout_width="200dp"
         android:layout_height="200dp"
-=======
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
->>>>>>> 505abf4763f78da9c425be59d15322a3c3005870
+
+
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
