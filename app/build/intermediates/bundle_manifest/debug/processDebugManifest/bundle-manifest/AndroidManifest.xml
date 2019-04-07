@@ -29,6 +29,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.user_registeration.Manager_Parking_List" />
+        <activity android:name="com.example.user_registeration.ItemsToBeCooked" />
         <activity android:name="com.example.user_registeration.ListOrders" />
         <activity android:name="com.example.user_registeration.Chef" />
         <activity android:name="com.example.user_registeration.Bill" />
@@ -58,7 +60,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.user_registeration.Home" />
         <activity android:name="com.example.user_registeration.Cart" />
         <activity android:name="com.example.user_registeration.FoodList" />
         <activity android:name="com.example.user_registeration.FoodDetail" />
