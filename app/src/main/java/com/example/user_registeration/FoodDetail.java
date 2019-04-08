@@ -21,6 +21,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
@@ -49,6 +50,7 @@ public class FoodDetail extends AppCompatActivity {
         //food_id= ref.orderByChild(food_name).toString();
 
         getIncomingIntent();
+        Log.d(TAG, "getIncomingIntent: found " + food_name );
 
 
 
@@ -93,7 +95,6 @@ public class FoodDetail extends AppCompatActivity {
     }
 
     private void getFoodDetail(final String ID) {
-
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

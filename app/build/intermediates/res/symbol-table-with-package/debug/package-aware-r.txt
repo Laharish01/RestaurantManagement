@@ -1124,18 +1124,20 @@ id Delivery
 id Dine
 id ETbutton
 id FUNCTION
-id FeedbackManager
 id FeedbackMn
 id FoodText
 id FourWheeler
 id FriendText
+id ItemsToBeCookedText
 id Linear
 id LinearLayoutMN
+id ListOrder
 id ListViewMNFB
 id ListViewMN_DineFB
 id ListViewMN_HDFB
 id META
 id OrderList
+id OrderedItems
 id PackagingText
 id ParkingText
 id PresentationText
@@ -1253,6 +1255,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fab
+id fab2
 id feedbackDine
 id feedbackHd
 id fill
@@ -1529,6 +1532,8 @@ layout activity_feedback_home_delivery
 layout activity_food_detail
 layout activity_food_list
 layout activity_home_delivery_fbmn
+layout activity_items_to_be_cooked
+layout activity_list_orders
 layout activity_main
 layout activity_main_menu
 layout activity_manager__feedback
@@ -1615,6 +1620,7 @@ string FourWheeler
 string HintFeedback
 string HomeDeliveryFB
 string HomeDeliveryText
+string Order
 string OrderList
 string PackageText
 string ParkingText

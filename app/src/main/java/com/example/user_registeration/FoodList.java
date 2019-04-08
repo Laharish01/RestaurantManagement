@@ -17,6 +17,7 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class FoodList extends AppCompatActivity  {
@@ -41,8 +42,25 @@ public class FoodList extends AppCompatActivity  {
         setContentView(R.layout.activity_food_list);
         Log.d(TAG, "onCreate: started");
 
+        Calendar calendar = Calendar.getInstance();
+        int  hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int  minute = calendar.get(Calendar.MINUTE);
+        String currentTime=hour+":"+minute;
+
         database = FirebaseDatabase.getInstance();
-        ref = database.getReference("Food");
+        if(currentTime.compareTo("16:00")>0)
+        {
+            ref = database.getReference("Food");
+            Log.d(TAG, "onCreate: "+ref);
+        }
+        else
+        {
+            ref = database.getReference("Food");
+            Log.d(TAG, "onCreate: "+ref);
+
+        }
+        //ref = database.getReference("Chats");
+
 
         recyclerView = findViewById(R.id.recycler_food);
         recyclerView.setHasFixedSize(true);
@@ -60,22 +78,22 @@ public class FoodList extends AppCompatActivity  {
                 Query q = ref.orderByChild("CategoryID").equalTo(name);
 
                 q.addValueEventListener(new ValueEventListener() {
-
+                    private static final String TAG = "FoodList";
+                    
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
                         foods.clear();
                         for (DataSnapshot postSnapshot : dataSnapshot.getChildren())
                         {
-
-                            Food food = postSnapshot.getValue(Food.class);
+                            Log.d(TAG, "onDataChange: in the loop");
+                            final Food food = postSnapshot.getValue(Food.class);
                             foods.add(food);
-
                         }
 
                         mAdapter = new FoodAdapter(FoodList.this, foods);
                         recyclerView.setAdapter(mAdapter);
-                        mAdapter.notifyDataSetChanged();
-                        Log.d(TAG, "onDataChange: displayed");
+
                     }
 
 

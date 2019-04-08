@@ -137,6 +137,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import static com.example.user_registeration.CartHD.globaladdress;
@@ -165,32 +166,42 @@ public class Payment extends AppCompatActivity {
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(dineOrHD=="HomeDelivery") {
-                    databaseReference=databaseReference.child("HomeDelivery");
+                if(dineOrHD=="HomeDelivery")
+                {
+                    //databaseReference=databaseReference.child("HomeDelivery");
                     sendToDatabaseHomeDelivery();
+                    startActivity(new Intent(Payment.this, NaviDraw.class));
+                    Toast.makeText(Payment.this, "Payment Successful!!!!", Toast.LENGTH_SHORT).show();
+                    Log.d(TAG, "onClickPayment: ");
                 }
                 else
                 {
-                    databaseReference=databaseReference.child("Dine");
+                    //databaseReference=databaseReference.child("Dine");
                     sendToDatabaseDine();
+                    startActivity(new Intent(Payment.this, NaviDraw.class));
+                    Toast.makeText(Payment.this, "Payment Successful!!!!", Toast.LENGTH_SHORT).show();
+
                 }
+                new Database(getBaseContext()).cleanCart();
             }
         });
-
     }
 
     private void sendToDatabaseDine()
     {
         RequestDine obj=new RequestDine(TwoSeaterTimings.globalTableName,Bill.globalcart,Set_Time.globalTableTiming);
-        databaseReference.setValue(obj);
+        databaseReference.child("Dine").push().setValue(obj);
     }
 
     private void sendToDatabaseHomeDelivery()
     {
-        RequestHD obj=new RequestHD(CartHD.globaladdress,Bill.globalcart);
-        databaseReference.setValue(obj);
+        Calendar calendar = Calendar.getInstance();
+        int  hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int  minute = calendar.get(Calendar.MINUTE);
+        String currentTime=hour+":"+minute;
+        RequestHD obj=new RequestHD(CartHD.globaladdress,Bill.globalcart,currentTime);
+        databaseReference.child("HomeDelivery").push().setValue(obj);
 
     }
-
 }
 

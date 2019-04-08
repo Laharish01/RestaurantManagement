@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.user_registeration.Database.Database;
 import com.example.user_registeration.Model.Order;
@@ -34,14 +35,10 @@ public class Bill extends AppCompatActivity {
 
     Button confirm;
     TextView tableNameOrAddress;
-    ListView listView;
     TextView totalAmnt;
-    ArrayList <String> list;
-    ArrayAdapter arrayAdapter;
+
     String total;
     public static List<Order> globalcart;
-    Database myDb;
-
 
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
@@ -63,8 +60,6 @@ public class Bill extends AppCompatActivity {
         layoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         Variables();
-        list = new ArrayList <>();
-        arrayAdapter = new ArrayAdapter <>(this, android.R.layout.simple_list_item_1, list);
 
         String temp=NaviDraw.globalDineorHD;
         if(temp=="HomeDelivery") {
@@ -81,37 +76,32 @@ public class Bill extends AppCompatActivity {
         tableNameOrAddress.setText(tableNameOrAddressText);//settinf tname or address
 
 
+
          Log.d(TAG, "onCreateADD/table: "+total);
         totalAmnt=findViewById(R.id.TotalAmtText);
         totalAmnt.setText(""+CartHD.globaltotal);//setting amount
-
-
-
-
-
-
+        loadListFood();
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
+                public void onClick(View v) {
+                startActivity(new Intent(Bill.this,Payment.class));
             }
         });
-        loadListFood();
+
     }
 
 
     private void Variables() {
         confirm = findViewById(R.id.ConfirmBill);
-        //listView = findViewById(R.id.FoodItemsList);
+      //  listView = findViewById(R.id.FoodItemsList);
         totalAmnt = findViewById(R.id.TotalPrice);
     }
     private void loadListFood() {
         globalcart = new Database(this).getCarts();
-        adapter = new CartAdapter(cart, this);
-        recyclerView.setAdapter(adapter);
+        adapter = new CartAdapter(globalcart, this);
+       recyclerView.setAdapter(adapter);
 
-
-
+        Toast.makeText(this, "load list food", Toast.LENGTH_SHORT).show();
     }
 
 }

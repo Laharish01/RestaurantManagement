@@ -18,10 +18,7 @@
             android:id="@+id/feedbackHd"
             android:icon="@drawable/ic_feedback_black_24dp"
             android:title="@string/HomeDeliveryFB" />
-        <item
-            android:id="@+id/FeedbackManager"
-            android:icon="@drawable/ic_remove_red_eye_black_24dp"
-            android:title="@string/FeedbackText" />
+
         <item
             android:id="@+id/logout"
             android:icon="@drawable/ic_exit_to_app_black_24dp"

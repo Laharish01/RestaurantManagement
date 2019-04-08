@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ListOrders"></activity>
         <activity android:name=".Chef" />
+        <activity android:name="ItemsToBeCooked"/>
         <activity android:name=".Bill" />
         <activity
             android:name=".NaviDraw"
@@ -22,6 +24,7 @@
         <activity android:name=".ManagerRefresh" />
         <activity android:name=".SetParkingTime" />
         <activity android:name=".Parking" />
+        <activity android:name=".Payment" />
         <activity android:name=".Set_Time" />
         <activity android:name=".Show_Timings_Dialog" />
         <activity android:name=".TwoSeaterTimings" />
@@ -41,7 +44,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".CartHD" />
         <activity android:name=".FoodList" />
         <activity android:name=".FoodDetail" />

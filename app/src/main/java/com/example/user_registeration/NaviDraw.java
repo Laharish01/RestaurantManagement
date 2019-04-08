@@ -63,6 +63,7 @@ public class NaviDraw extends AppCompatActivity
             public void onClick(View v) {
                 globalDineorHD="HomeDelivery";
                 startActivity(new Intent(NaviDraw.this, MainMenu.class));
+                Log.d(TAG, "onClick: clicked home delivery");
 
             }
         });
@@ -148,8 +149,6 @@ public class NaviDraw extends AppCompatActivity
             startActivity(new Intent(getApplicationContext(),Feedback_home_delivery.class));
 
 
-        } else if (id == R.id.FeedbackManager) {
-            startActivity(new Intent(getApplicationContext(), Manager_Feedback.class));
         }
         else if (id == R.id.logout) {
             logout();

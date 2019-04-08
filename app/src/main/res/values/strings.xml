@@ -198,9 +198,9 @@
     <string name="OrderList">Your Orders</string>
     <string name="TotalPrice">TOTAL</string>
 
-       <string name="Dine">Dine</string>
+    <string name="Dine">Dine</string>
     <string name="Delivery">Delivery</string>
     <string name="ConfirmTable">Comfirm</string>
-
+    <string name="Order">Orders</string>
 
 </resources>

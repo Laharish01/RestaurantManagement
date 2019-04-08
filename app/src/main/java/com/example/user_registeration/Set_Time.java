@@ -116,7 +116,7 @@ public class Set_Time extends AppCompatActivity {
                             String temp=String.valueOf(dataSnapshot.getValue());
                             String addtime=temp+ST.replace(":","") + "-" + ET.replace(":","")+",";
                             databaseRef.child(tableName).setValue(addtime);
-                            globalTableTiming=addtime;
+                            globalTableTiming=ST.replace(":","") + "-" + ET.replace(":","")+",";
 
                         }
 

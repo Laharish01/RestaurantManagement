@@ -9,17 +9,19 @@ public class RequestHD {
     private String address;
     //private String total;
     private List<Order> foods;
+    String currentTime;
     // private String ST;
 
     public RequestHD() {
     }
 
 
-    public RequestHD(String address,List<Order> foods) {
+    public RequestHD(String address,List<Order> foods, String currentTime) {
 
         this.address = address;
 
         this.foods = foods;
+        this.currentTime=currentTime;
     }
 
     public static void getStartingTime(String ST){

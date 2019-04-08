@@ -20,6 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import static android.view.View.OnClickListener;
@@ -51,7 +52,25 @@ public class MainMenu extends AppCompatActivity {
         Log.d(TAG, "onCreate: started");
 
         fireData = FirebaseDatabase.getInstance();
-        ref = fireData.getReference("Menu");
+
+        Calendar calendar = Calendar.getInstance();
+        int  hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int  minute = calendar.get(Calendar.MINUTE);
+
+        String currentTime=hour+":"+minute;
+        Log.d(TAG, "onCreate:Time "+currentTime);
+
+        if(currentTime.compareTo("16:00")>0)
+        {
+            ref = fireData.getReference("ChatsMenu");
+            Log.d(TAG, "onCreate:Chats"+ref);
+        }
+        else
+        {
+            ref = fireData.getReference("Menu");
+            Log.d(TAG, "onCreate:Menu"+ref);
+        }
+        //ref=fireData.getReference("ChatsMenu");
 
         toolbar = findViewById(R.id.toolbarMain);
         toolbar.setTitle("MENU");
@@ -63,6 +82,16 @@ public class MainMenu extends AppCompatActivity {
 
         //Creation of array of objects to store the data
         cat = new ArrayList<>();
+
+        fab = findViewById(R.id.fab2);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent putHDorDine = new Intent(MainMenu.this, CartHD.class);
+                putHDorDine.putExtra("HDorDine",HDorDine);
+                startActivity(putHDorDine);
+            }
+        });
 
         //to put the data into the above array from firebase
         ref.addValueEventListener(new ValueEventListener() {
