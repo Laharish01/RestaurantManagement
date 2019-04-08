@@ -33,6 +33,7 @@ public class Set_Time extends AppCompatActivity {
     TimePickerDialog timePickerDialog;
     FirebaseDatabase database=FirebaseDatabase.getInstance();
     DatabaseReference databaseRef;
+    public static String globalTableTiming;
 
     Button STbutton, ETbutton,Availabilitybutton,ShowBooked,Confirm;
     int hour, minute,position;
@@ -115,6 +116,7 @@ public class Set_Time extends AppCompatActivity {
                             String temp=String.valueOf(dataSnapshot.getValue());
                             String addtime=temp+ST.replace(":","") + "-" + ET.replace(":","")+",";
                             databaseRef.child(tableName).setValue(addtime);
+                            globalTableTiming=addtime;
 
                         }
 

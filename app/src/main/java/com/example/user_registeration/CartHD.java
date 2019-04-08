@@ -31,20 +31,14 @@ import java.util.Locale;
 
 public class CartHD extends AppCompatActivity {
     private static final String TAG = "CartHD";
+    public static float globaltotal;
+    public static String globaladdress;
 
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
-
-    FirebaseDatabase database=FirebaseDatabase.getInstance();
-    DatabaseReference ref=database.getReference();
-    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-
     TextView xtotal;
-    Button btnPlace, checkout;
+    Button  checkout;
 
-    String name, tiem;
-    DatabaseReference nameref;
-     String HDorDine;
 
     List<Order> cart = new ArrayList<>();
     CartAdapter adapter;
@@ -53,57 +47,38 @@ public class CartHD extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
 
-        Intent time = getIntent();
-        tiem = time.getStringExtra("time");
-        final Intent but = getIntent();
-        HDorDine = but.getStringExtra("HDorDine");
-        //ref=database.getReference("Requests");
-        //nameref= ref.child("User").child(user.getUid()).child("Name");
+        xtotal = findViewById(R.id.total);
         recyclerView=findViewById(R.id.listCart);
         recyclerView.setHasFixedSize(true);
+
+
+
         layoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        Toast.makeText(this, "Starting time" + tiem, Toast.LENGTH_SHORT).show();
-        Log.d(TAG, "onCreate: "+tiem);
 
-        Toast.makeText(this, ""+HDorDine, Toast.LENGTH_SHORT).show();
-        xtotal = findViewById(R.id.total);
-        /*btnPlace=findViewById(R.id.btnPlaceOrder);
-        btnPlace.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(HDorDine.equals("homedel"))
-                showAlertDialog();
-                else {
-                    placeOrder();
-                }
-            }
-        });*/
+         final String temp=NaviDraw.globalDineorHD;//intentForHD.getStringExtra("DineorHD");
+
         checkout = findViewById(R.id.checkout);
         checkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CartHD.this, Bill.class));
+                if(temp.equals("HomeDelivery"))
+                {
+                    showAlertDialog();
+                }
+
+                else
+                {
+                    startActivity(new Intent(CartHD.this, Bill.class));
+                }
+
             }
         });
         loadListFood();
-
     }
 
-   /* private void placeOrder() {
-        RequestDine requestDine = new RequestDine(name, xtotal.getText().toString(), cart, tiem, "table1");
-        ref.child(user.getUid())
-                .setValue(requestDine);
-
-        new Database(getBaseContext()).cleanCart();
-        Toast.makeText(CartHD.this, "Order placed, Thank you!", Toast.LENGTH_SHORT).show();
-
-        finish();
-    }
-
-    private void showAlertDialog() {
-
-        Intent intent = getIntent();
+    private void showAlertDialog()
+    {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(CartHD.this);
         alertDialog.setTitle("One more step!");
         alertDialog.setMessage("Enter your address");
@@ -115,28 +90,16 @@ public class CartHD extends AppCompatActivity {
         );
         edtAddress.setLayoutParams(lp);
 
-        alertDialog.setView(edtAddress);
+       alertDialog.setView(edtAddress);
         alertDialog.setIcon(R.drawable.ic_add_shopping_cart_black_24dp);
+
 
         alertDialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                RequestHD requestHD = new RequestHD(
-                        name,
-                        edtAddress.getText().toString(),
-                        xtotal.getText().toString(),
-                        cart
+                globaladdress=edtAddress.getText().toString();
+                startActivity(new Intent(CartHD.this, Bill.class));
 
-                );
-                Log.d(TAG, "onClick: "+ user.getDisplayName());
-                Intent money = new Intent(CartHD.this, Payment.class);
-                money.putExtra("amount", xtotal.getText().toString());
-                ref.child(user.getUid())
-                        .setValue(requestHD);
-
-                new Database(getBaseContext()).cleanCart();
-                Toast.makeText(CartHD.this, "Thank you, Order placed", Toast.LENGTH_SHORT).show();
-                finish();
             }
         });
 
@@ -149,23 +112,24 @@ public class CartHD extends AppCompatActivity {
 
         alertDialog.show();
 
-    }*/
+    }
 
     private void loadListFood() {
         cart = new Database(this).getCarts();
         adapter = new CartAdapter(cart, this);
         recyclerView.setAdapter(adapter);
 
-        int total = 0;
+        globaltotal = 0;
         for(Order order : cart){
 
-            total+=(Integer.parseInt(order.getPrice()))*(Integer.parseInt(order.getQuantity()));
+            globaltotal+=(Integer.parseInt(order.getPrice()))*(Integer.parseInt(order.getQuantity()));
 
         }
         Locale locale = new Locale("en", "US");
         NumberFormat fmt = NumberFormat.getCurrencyInstance(locale);
 
-        xtotal.setText(fmt.format(total));
+        xtotal.setText(fmt.format(globaltotal));
+
 
     }
 }

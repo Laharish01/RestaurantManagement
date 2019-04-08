@@ -1110,7 +1110,6 @@ drawable twotable
 font frenchpress_freefont
 font the_brownies
 id ALT
-id Address
 id Availability_button
 id BillHeading
 id BookedTimings
@@ -1127,7 +1126,6 @@ id ETbutton
 id FUNCTION
 id FeedbackManager
 id FeedbackMn
-id FoodItemsList
 id FoodText
 id FourWheeler
 id FriendText
@@ -1153,8 +1151,8 @@ id SpeedText
 id StTime
 id TableName
 id TasteText
+id TotalAmtText
 id TotalPrice
-id TotalPriceText
 id TwoGrid
 id TwoWheeler
 id _2SeaterBtn
@@ -1211,6 +1209,7 @@ id center_vertical
 id chains
 id check
 id checkbox
+id checkout
 id chronometer
 id clip_horizontal
 id clip_vertical
@@ -1298,6 +1297,7 @@ id light
 id line1
 id line3
 id linearLayout
+id listBill
 id listCart
 id listMode
 id list_item

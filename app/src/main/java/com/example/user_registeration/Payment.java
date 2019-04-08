@@ -1,4 +1,4 @@
-package com.example.user_registeration;
+/**package com.example.user_registeration;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -113,3 +113,84 @@ public class Payment extends AppCompatActivity {
     }
 
 }
+*/
+package com.example.user_registeration;
+
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.telecom.Conference;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.user_registeration.Database.Database;
+import com.example.user_registeration.Model.Order;
+import com.example.user_registeration.Model.RequestDine;
+import com.example.user_registeration.Model.RequestHD;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.example.user_registeration.CartHD.globaladdress;
+
+public class Payment extends AppCompatActivity {
+
+    FirebaseDatabase database;
+    DatabaseReference databaseReference;
+
+    private static final String TAG = "Payment";
+    TextView amt;
+    Button confirm;
+    String dineOrHD;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_payment);
+
+        database=FirebaseDatabase.getInstance();
+        databaseReference=database.getReference().child("ConfirmedOrders");
+        confirm=findViewById(R.id.confirm);
+        amt = findViewById(R.id.money);
+        amt.setText(""+CartHD.globaltotal);
+        dineOrHD=NaviDraw.globalDineorHD;
+        confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(dineOrHD=="HomeDelivery") {
+                    databaseReference=databaseReference.child("HomeDelivery");
+                    sendToDatabaseHomeDelivery();
+                }
+                else
+                {
+                    databaseReference=databaseReference.child("Dine");
+                    sendToDatabaseDine();
+                }
+            }
+        });
+
+    }
+
+    private void sendToDatabaseDine()
+    {
+        RequestDine obj=new RequestDine(TwoSeaterTimings.globalTableName,Bill.globalcart,Set_Time.globalTableTiming);
+        databaseReference.setValue(obj);
+    }
+
+    private void sendToDatabaseHomeDelivery()
+    {
+        RequestHD obj=new RequestHD(CartHD.globaladdress,Bill.globalcart);
+        databaseReference.setValue(obj);
+
+    }
+
+}
+

@@ -2,13 +2,16 @@
 package com.example.user_registeration;
 
 import android.app.TimePickerDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -22,17 +25,20 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Objects;
+import java.util.Random;
 
 public class SetParkingTime extends AppCompatActivity {
     private static final String TAG = "SetParkingTime";
     TimePickerDialog timePickerDialog;
     FirebaseDatabase databasePark= FirebaseDatabase.getInstance();
-    DatabaseReference databaseRefPark;
+    DatabaseReference databaseRefPark,refPass;
     Button STbutton, ETbutton, Availabilitybutton,Confirm;
     int hour, minute,position;
     boolean anstemp;
     String key;
     String ST = "\0", ET = "\0";
+    String random="";
+
 
 
     @Override
@@ -47,6 +53,7 @@ public class SetParkingTime extends AppCompatActivity {
         Intent intent = getIntent();
         String typeOfVehicle = intent.getStringExtra("TypeWheeler");
         //getting reference from database
+        refPass=databasePark.getReference().child("BookedParking");
         databaseRefPark = databasePark.getReference().child("PARKING").child(typeOfVehicle);
 
         Enter_Time();
@@ -127,8 +134,16 @@ public class SetParkingTime extends AppCompatActivity {
                     });
 
                 }
-                anstemp=false;
+                Random r = new Random();
 
+                String alphabet = "123xyz";
+                random="";
+                for (int i = 0; i <= 5; i++) {
+                    random += alphabet.charAt(r.nextInt(alphabet.length()));
+                }
+                refPass.child(random).setValue(ST.replace(":", "") + "-" + ET.replace(":", ""));
+                anstemp = false;
+                openDialog();
 
             }
         });
@@ -137,6 +152,28 @@ public class SetParkingTime extends AppCompatActivity {
 
         //databaseRefPark.child("P" + position).setValue(temp+ST.replace(":","") + "-" + ET.replace(":","")+",");//
 
+    }
+    private void openDialog() {
+
+
+        // Toast.makeText(getContext(),""+random,Toast.LENGTH_SHORT).show();
+        AlertDialog.Builder builder=new AlertDialog.Builder(SetParkingTime.this);
+        builder.setTitle("YOUR TICKET")
+                .setMessage(random)
+                .setPositiveButton("Done", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+        TextView txtView =new TextView(getApplicationContext());
+        LinearLayout.LayoutParams lp=new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.MATCH_PARENT);
+        txtView.setLayoutParams(lp);
+        builder.setView(txtView);
+
+        builder.show();
     }
 
     public void Enter_Time() {

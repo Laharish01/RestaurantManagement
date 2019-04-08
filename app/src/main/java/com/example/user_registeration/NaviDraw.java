@@ -32,7 +32,8 @@ public class NaviDraw extends AppCompatActivity
     FloatingActionButton fab;
     TextView username, useremail;
 
-     String HDorDine="\0";
+    public static String globalDineorHD="";
+    String HDorDine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,8 +61,9 @@ public class NaviDraw extends AppCompatActivity
         homeDel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                globalDineorHD="HomeDelivery";
                 startActivity(new Intent(NaviDraw.this, MainMenu.class));
-                HDorDine = "homedel";
+
             }
         });
 
@@ -69,8 +71,11 @@ public class NaviDraw extends AppCompatActivity
         finedine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Intent intent=new Intent(NaviDraw.this,Bill.class);
+                //intent.putExtra("DineorHD","Dine");
+                globalDineorHD="Dine";
+
                 startActivity(new Intent(NaviDraw.this, TableType.class));
-                HDorDine = "dine";
 
             }
         });

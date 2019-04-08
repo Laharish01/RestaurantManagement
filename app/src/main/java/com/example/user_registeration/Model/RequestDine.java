@@ -5,12 +5,10 @@ import java.util.List;
 
 public class RequestDine {
 
-    private String name;
-  //  private String address;
-    private String total;
+    private String TableName;
     private List<Order> foods;
     private String timings;
-    private String table;
+
 
     public RequestDine() {
     }
@@ -18,39 +16,25 @@ public class RequestDine {
 
 
 
-    public RequestDine(String name, String total, List<Order> foods, String timings, String table) {
-
-        this.name = name;
-     //   this.address = address;
-        this.total = total;
+    public RequestDine(String TableName,List<Order> foods, String timings) {
+        this.TableName=TableName;
         this.timings = timings;
         this.foods = foods;
-        this.table = table;
     }
 
-    public String getTable() { return table; }
-
-    public void setTable(String table) { this.table = table; }
 
     public String getTimings() { return timings; }
 
     public void setTimings(String timings) { timings = timings; }
 
     public String getName() {
-        return name;
+        return TableName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.TableName = TableName;
     }
 
-       public String getTotal() {
-        return total;
-    }
-
-    public void setTotal(String total) {
-        this.total = total;
-    }
 
     public List<Order> getFoods() {
         return foods;
@@ -60,5 +44,3 @@ public class RequestDine {
         this.foods = foods;
     }
 }
-
-

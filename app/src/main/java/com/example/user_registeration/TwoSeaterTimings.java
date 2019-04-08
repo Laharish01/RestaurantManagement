@@ -21,6 +21,7 @@ public class TwoSeaterTimings extends AppCompatActivity implements AdapterView.O
 
     GridView TwoGrid;
     byte no_of_table;
+    public static String globalTableName="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class TwoSeaterTimings extends AppCompatActivity implements AdapterView.O
     public void onItemClick(AdapterView <?> parent, View view, int position, long id) {
 
         Intent intent=new Intent(view.getContext(),Set_Time.class);
+
         Informing_Table_TypeandName obj=new Informing_Table_TypeandName();
         obj.Table_TypeandName(view,intent,no_of_table);
 
@@ -57,6 +59,7 @@ public class TwoSeaterTimings extends AppCompatActivity implements AdapterView.O
     public boolean onItemLongClick(AdapterView <?> parent, View view, int position, long id)
     {
         Intent intent=new Intent(view.getContext(),Show_Timings_Dialog.class);
+
         Informing_Table_TypeandName obj=new Informing_Table_TypeandName();
         obj.Table_TypeandName(view,intent,no_of_table);
         startActivity(intent);
@@ -70,6 +73,10 @@ class Informing_Table_TypeandName
     {
         ViewHolderSeat holder= (ViewHolderSeat) view.getTag();
         Table temp= (Table) holder.tableNameHolder.getTag();
+        //Intent intent1=new Intent(view.getContext(),Bill.class);//doubt
+        //intent1.putExtra("TableNameToBill",temp.tableName);
+        TwoSeaterTimings.globalTableName=temp.tableName;
+
         intent.putExtra("Table_name",temp.tableName);
         if(no_of_table==6||no_of_table==1)
             intent.putExtra("Type_of_Child","TwoSeater");

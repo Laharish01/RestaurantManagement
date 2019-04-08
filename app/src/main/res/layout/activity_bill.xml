@@ -15,13 +15,13 @@
         android:padding="10dp"
         android:layout_margin="10dp"
         android:text="@string/BillHead" />
-    <EditText
-        android:id="@+id/Address"
+    <TextView
+        android:id="@+id/TableName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="ADDRESS"
         android:ems="10"
         android:padding="20dp"
+        android:textAlignment="center"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/BillHeading"
         android:inputType="textMultiLine" />
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:text="@string/OrderList"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/Address"
+        android:layout_below="@id/TableName"
         />
 
     <LinearLayout
@@ -42,17 +42,28 @@
         android:orientation="vertical"
         android:layout_below="@id/OrderList">
 
-        <ListView
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listBill"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <!--<ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/FoodItemsList"
             android:padding="10dp"
             android:layout_margin="20dp"
-            />
+            />-->
     </LinearLayout>
 
     <TextView
-        android:id="@+id/TotalPriceText"
+        android:id="@+id/TotalAmtText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/Linear"
@@ -70,14 +81,14 @@
         android:layout_marginStart="255dp"
         android:layout_marginTop="12dp" />
 
-    <android.support.design.button.MaterialButton
+    <Button
         android:id="@+id/ConfirmBill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PAY !"
         android:layout_centerHorizontal="true"
         android:layout_margin="30dp"
-        android:layout_below="@id/TotalPriceText"
+        android:layout_below="@id/TotalAmtText"
         android:background="@color/overlayBackground"/>
 
 </RelativeLayout>

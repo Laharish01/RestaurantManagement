@@ -102,25 +102,25 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int action_container = 0x7f0a003b;
-        public static final int action_divider = 0x7f0a003d;
-        public static final int action_image = 0x7f0a003e;
-        public static final int action_text = 0x7f0a0045;
-        public static final int actions = 0x7f0a0046;
-        public static final int async = 0x7f0a0053;
-        public static final int blocking = 0x7f0a0057;
-        public static final int bottom = 0x7f0a0058;
-        public static final int chronometer = 0x7f0a0066;
-        public static final int end = 0x7f0a0089;
-        public static final int forever = 0x7f0a009f;
-        public static final int icon = 0x7f0a00a9;
-        public static final int icon_group = 0x7f0a00aa;
-        public static final int info = 0x7f0a00b0;
-        public static final int italic = 0x7f0a00b2;
-        public static final int item_touch_helper_previous_elevation = 0x7f0a00b3;
-        public static final int left = 0x7f0a00b8;
-        public static final int line1 = 0x7f0a00ba;
-        public static final int line3 = 0x7f0a00bb;
+        public static final int action_container = 0x7f0a0039;
+        public static final int action_divider = 0x7f0a003b;
+        public static final int action_image = 0x7f0a003c;
+        public static final int action_text = 0x7f0a0043;
+        public static final int actions = 0x7f0a0044;
+        public static final int async = 0x7f0a0051;
+        public static final int blocking = 0x7f0a0055;
+        public static final int bottom = 0x7f0a0056;
+        public static final int chronometer = 0x7f0a0065;
+        public static final int end = 0x7f0a0088;
+        public static final int forever = 0x7f0a009e;
+        public static final int icon = 0x7f0a00a8;
+        public static final int icon_group = 0x7f0a00a9;
+        public static final int info = 0x7f0a00af;
+        public static final int italic = 0x7f0a00b1;
+        public static final int item_touch_helper_previous_elevation = 0x7f0a00b2;
+        public static final int left = 0x7f0a00b7;
+        public static final int line1 = 0x7f0a00b9;
+        public static final int line3 = 0x7f0a00ba;
         public static final int none = 0x7f0a00e1;
         public static final int normal = 0x7f0a00e2;
         public static final int notification_background = 0x7f0a00e3;
